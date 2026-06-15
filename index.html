@@ -1,0 +1,1840 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RUMAH AROMA - Scent Atelier & Custom Perfumery</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        atelier: {
+                            taupe: '#A88F78',
+                            taupeLight: '#C5B3A1',
+                            taupeDark: '#7C6753',
+                            cream: '#FAF7F2',
+                            ivory: '#FFFDF9',
+                            emerald: '#0F382E',
+                            emeraldLight: '#185647',
+                            emeraldDark: '#081F1A',
+                            gold: '#C5A880',
+                            charcoal: '#1C1B19',
+                            sand: '#EAE5DC'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #FAF7F2;
+            color: #1C1B19;
+            scroll-behavior: smooth;
+        }
+        /* Custom Premium Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #FAF7F2;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #A88F78;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #0F382E;
+        }
+        /* Glow animations and decorative effects */
+        @keyframes subtle-bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-6px); }
+        }
+        .animate-subtle-bounce {
+            animation: subtle-bounce 4s ease-in-out infinite;
+        }
+        .glass-premium {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="font-sans antialiased selection:bg-atelier-emerald selection:text-white">
+
+    <!-- Top Premium Banner -->
+    <div class="bg-atelier-emerald text-white text-center py-2 px-4 text-[11px] tracking-[0.2em] font-medium uppercase border-b border-atelier-emeraldDark">
+        ✨ 100% Pure Organic Oils Imported from Grasse, France • Gratis Ongkir Seluruh Indonesia ✨
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="sticky top-0 z-40 bg-atelier-cream/90 backdrop-blur-md text-atelier-charcoal border-b border-stone-200/60 py-4 px-6 md:px-12 transition-all">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex flex-col">
+                <span class="font-serif text-2xl md:text-3xl tracking-[0.15em] text-atelier-emerald font-semibold">RUMAH AROMA</span>
+                <span class="text-[9px] md:text-[10px] tracking-[0.3em] uppercase text-atelier-taupeDark font-semibold">Scent Atelier & Inspired Luxury</span>
+            </div>
+            <div class="hidden lg:flex space-x-8 text-xs uppercase tracking-[0.15em] font-semibold text-stone-600">
+                <a href="#welcome-portal" class="hover:text-atelier-emerald transition-colors">Pintu Masuk</a>
+                <a href="#customizer-section" class="hover:text-atelier-emerald transition-colors">Atelier Kustomisasi</a>
+                <a href="#philosophy" class="hover:text-atelier-emerald transition-colors">Filosofi</a>
+                <a href="#faq" class="hover:text-atelier-emerald transition-colors">FAQ</a>
+            </div>
+            <div>
+                <a href="#welcome-portal" class="bg-atelier-emerald hover:bg-atelier-emeraldLight text-white font-semibold px-5 py-3 rounded-full text-xs tracking-wider uppercase transition-all shadow-md inline-block">
+                    Mulai Eksplorasi <i class="fa-solid fa-compass ml-1.5"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Header -->
+    <section class="relative bg-gradient-to-b from-atelier-cream to-stone-100 overflow-hidden py-16 px-6 md:px-12">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
+            <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                <span class="inline-flex items-center space-x-2 bg-atelier-emerald/10 border border-atelier-emerald/20 px-4 py-2 rounded-full text-xs text-atelier-emerald font-semibold uppercase tracking-widest">
+                    <span class="w-2 h-2 rounded-full bg-atelier-gold animate-ping"></span>
+                    <span>Premium Inspired Perfumery</span>
+                </span>
+                <h1 class="font-serif text-4xl sm:text-5xl md:text-6xl font-light leading-[1.15] text-atelier-charcoal">
+                    Miliki Wewangian <span class="italic text-atelier-emerald font-normal block sm:inline">Desainer Dunia</span> yang Dikustomisasi Khusus Dirimu
+                </h1>
+                <p class="text-stone-600 text-sm sm:text-base md:text-lg font-light leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                    Kami menghadirkan esensi aroma dari parfum-parfum terlaris dunia dengan kebebasan penuh bagi Anda untuk memilih tingkat konsentrasi, ukuran volume, serta desain botol premium yang paling menggambarkan identitas eksklusif Anda.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-2">
+                    <a href="#welcome-portal" class="bg-atelier-emerald hover:bg-atelier-emeraldLight text-white font-bold px-8 py-4 rounded-full text-xs uppercase tracking-widest transition-all shadow-lg hover:shadow-atelier-emerald/10 flex items-center justify-center">
+                        Temukan Aromamu <i class="fa-solid fa-arrow-down ml-2"></i>
+                    </a>
+                    <a href="#customizer-section" class="border border-stone-300 hover:border-atelier-emerald text-stone-700 hover:text-atelier-emerald px-8 py-4 rounded-full text-xs uppercase tracking-widest transition-all font-semibold flex items-center justify-center">
+                        Langsung Custom <i class="fa-solid fa-flask ml-2"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="lg:col-span-5 flex justify-center">
+                <!-- Large Elegant Visual Component representing the customization bottle -->
+                <div class="relative w-80 h-[450px] bg-white border border-stone-200/80 p-8 rounded-[2.5rem] shadow-2xl flex flex-col justify-between items-center animate-subtle-bounce">
+                    <div class="absolute -top-3 -right-3 bg-atelier-gold text-stone-900 text-[10px] font-bold uppercase tracking-widest px-4 py-1.5 rounded-full shadow-lg">
+                        Custom Inspired
+                    </div>
+                    
+                    <span class="text-atelier-taupeDark font-serif text-sm tracking-widest uppercase">Rumah Aroma Scent</span>
+                    
+                    <!-- SVG Perfume Bottle Showcase with Golden Accents -->
+                    <div class="w-full flex justify-center my-4">
+                        <svg class="w-36 h-56 drop-shadow-[0_20px_20px_rgba(168,143,120,0.15)]" viewBox="0 0 100 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Cap Area -->
+                            <rect x="30" y="5" width="40" height="25" rx="5" fill="#0F382E" stroke="#C5A880" stroke-width="1.5"/>
+                            <rect x="25" y="30" width="50" height="6" fill="#C5A880"/>
+                            <!-- Spray Stem -->
+                            <rect x="42" y="36" width="16" height="8" fill="#EAE5DC"/>
+                            <!-- Bottle Body Glass -->
+                            <path d="M12 44H88C91 44 94 47 94 50V136C94 141.5 89.5 146 84 146H16C10.5 146 6 141.5 6 136V50C6 47 9 44 12 44Z" fill="white" fill-opacity="0.12" stroke="#0F382E" stroke-width="2"/>
+                            <!-- Liquid inside Bottle with premium amber gradient -->
+                            <path d="M7 80V136C7 141 11 145 16 145H84C89 145 93 141 93 136V80H7Z" fill="url(#heroLiquidGrad)" fill-opacity="0.75"/>
+                            <!-- Label Plate -->
+                            <rect x="22" y="80" width="56" height="42" rx="4" fill="#1C1B19" fill-opacity="0.95" stroke="#C5A880" stroke-width="1"/>
+                            <text x="50" y="96" font-family="serif" font-weight="bold" font-size="7.5" fill="#C5A880" text-anchor="middle" letter-spacing="1.5">BLACK OPIUM</text>
+                            <text x="50" y="108" font-family="sans-serif" font-size="4.5" fill="white" text-anchor="middle" letter-spacing="1">EXTRAIT DE PARFUM</text>
+                            <text x="50" y="116" font-family="sans-serif" font-size="4" fill="#C5A880" text-anchor="middle">50ml</text>
+                            
+                            <!-- Gradients definitions -->
+                            <defs>
+                                <linearGradient id="heroLiquidGrad" x1="50" y1="80" x2="50" y2="145" gradientUnits="userSpaceOnUse">
+                                    <stop offset="0%" stop-color="#A88F78"/>
+                                    <stop offset="50%" stop-color="#C5A880"/>
+                                    <stop offset="100%" stop-color="#7C6753"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+
+                    <div class="text-center">
+                        <p class="font-serif text-lg tracking-wide text-stone-900 font-semibold italic" id="hero-display-name">"Noir Opium"</p>
+                        <p class="text-xs text-stone-500 mt-1 uppercase tracking-wider font-semibold">Inspired by YSL Black Opium</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Two Entry Portals Section -->
+    <section id="welcome-portal" class="py-20 px-6 md:px-12 bg-atelier-cream scroll-mt-16 border-t border-stone-200">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="font-serif text-lg text-atelier-taupeDark italic block mb-2">Pilih Pintu Masuk Anda</span>
+                <h2 class="font-serif text-3xl md:text-5xl font-light uppercase tracking-wide text-atelier-emerald">MULAI PERJALANAN SENSORIS</h2>
+                <div class="w-24 h-[2px] bg-atelier-gold mx-auto my-4"></div>
+                <p class="text-stone-600 text-sm md:text-base font-light">
+                    Apakah Anda sudah mengetahui wewangian inspirasi desainer yang Anda inginkan, atau ingin asisten pintar kami mencarikan karakter aroma yang paling ideal?
+                </p>
+            </div>
+
+            <!-- The Grid of Portals -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
+                
+                <!-- PORTAL 1: ASISTEN PINTAR (KUIS VISUAL) -->
+                <div class="bg-white border border-stone-200 rounded-[2rem] p-8 md:p-10 shadow-lg flex flex-col justify-between hover:shadow-xl transition-all relative overflow-hidden">
+                    <div class="absolute -top-10 -left-10 w-40 h-40 bg-atelier-taupe/5 rounded-full filter blur-xl"></div>
+                    <div class="relative z-10">
+                        <div class="w-12 h-12 rounded-2xl bg-atelier-taupe/10 flex items-center justify-center text-atelier-taupeDark mb-6">
+                            <i class="fa-solid fa-wand-magic-sparkles text-xl"></i>
+                        </div>
+                        <h3 class="font-serif text-2xl font-bold text-stone-900 mb-3">PINTU 1: ASISTEN PINTAR</h3>
+                        <p class="text-stone-500 text-sm font-light leading-relaxed mb-6">
+                            Sangat cocok bagi Anda yang masih bingung mencari jati diri aroma Anda. Jawab kuis visual 4-langkah cepat kami tanpa mengetik seulas kata pun, dan sistem kami akan mengunci aroma rekomendasi mutlak yang paling tepat.
+                        </p>
+                    </div>
+                    
+                    <button onclick="openSmartAssistant()" class="w-full bg-atelier-emerald hover:bg-atelier-emeraldLight text-white font-bold py-4 rounded-full text-xs uppercase tracking-widest transition-all text-center flex items-center justify-center shadow-md">
+                        Mulai Kuis Visual Asisten <i class="fa-solid fa-play ml-2 text-xs"></i>
+                    </button>
+                </div>
+
+                <!-- PORTAL 2: SEARCH ENGINE DUPE -->
+                <div class="bg-white border border-stone-200 rounded-[2rem] p-8 md:p-10 shadow-lg flex flex-col justify-between hover:shadow-xl transition-all relative overflow-hidden">
+                    <div class="absolute -bottom-10 -right-10 w-40 h-40 bg-atelier-gold/10 rounded-full filter blur-xl"></div>
+                    <div class="relative z-10">
+                        <div class="w-12 h-12 rounded-2xl bg-atelier-gold/15 flex items-center justify-center text-atelier-taupeDark mb-6">
+                            <i class="fa-solid fa-magnifying-glass text-xl"></i>
+                        </div>
+                        <h3 class="font-serif text-2xl font-bold text-stone-900 mb-3">PINTU 2: CARI AROMA INSPIRED</h3>
+                        <p class="text-stone-500 text-sm font-light leading-relaxed mb-6">
+                            Untuk Anda yang sudah paham aroma brand dunia yang Anda sukai. Ketik nama brand desainer global populer atau nama parfum aslinya (Contoh: "Baccarat", "Sauvage", "Black Opium") dan langsung pilih hasil pencarian untuk kustomisasi wadah & kepekatannya.
+                        </p>
+                    </div>
+                    
+                    <div class="relative w-full">
+                        <input type="text" id="live-search-input" onkeyup="handleLiveSearch()" class="w-full bg-stone-50 border border-stone-300 rounded-full px-6 py-4 pr-12 text-sm text-stone-800 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-atelier-emerald" placeholder="Ketik aroma, contoh: Dior, Baccarat, YSL...">
+                        <div class="absolute right-4 top-1/2 -translate-y-1/2 text-stone-400">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        
+                        <!-- Autocomplete Suggestions List -->
+                        <div id="autocomplete-results" class="absolute left-0 right-0 mt-2 bg-white border border-stone-200 rounded-2xl shadow-xl max-h-60 overflow-y-auto hidden z-20">
+                            <!-- Dynamic Items Populated in JS -->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Smart Assistant Quiz Container Modal -->
+    <div id="quiz-modal" class="fixed inset-0 z-50 overflow-y-auto hidden bg-atelier-charcoal/80 backdrop-blur-md flex items-center justify-center p-4">
+        <div class="relative bg-atelier-cream max-w-2xl w-full rounded-[2.5rem] overflow-hidden shadow-2xl border border-stone-200/80 transform transition-all duration-300">
+            <!-- Modal Close Header -->
+            <div class="flex justify-between items-center px-8 py-6 border-b border-stone-200/60 bg-white">
+                <div class="flex items-center space-x-2">
+                    <span class="w-2.5 h-2.5 rounded-full bg-atelier-emerald animate-pulse"></span>
+                    <span class="font-serif font-bold text-sm text-atelier-emerald tracking-wider uppercase">Asisten Aroma Pintar</span>
+                </div>
+                <button onclick="closeSmartAssistant()" class="text-stone-400 hover:text-stone-800 transition">
+                    <i class="fa-solid fa-circle-xmark text-2xl"></i>
+                </button>
+            </div>
+
+            <!-- Quiz Steps Screen -->
+            <div class="p-8 md:p-10 space-y-8">
+                <!-- Step tracker text -->
+                <div class="flex justify-between items-center">
+                    <span id="quiz-step-indicator" class="text-xs font-bold uppercase tracking-widest text-atelier-taupeDark">Pertanyaan 1 dari 4</span>
+                    <div class="flex space-x-1" id="quiz-dots">
+                        <div class="w-6 h-1.5 rounded-full bg-atelier-emerald"></div>
+                        <div class="w-2.5 h-1.5 rounded-full bg-stone-200"></div>
+                        <div class="w-2.5 h-1.5 rounded-full bg-stone-200"></div>
+                        <div class="w-2.5 h-1.5 rounded-full bg-stone-200"></div>
+                    </div>
+                </div>
+
+                <!-- QUIZ STEP 1: AKTIVITAS -->
+                <div id="quiz-screen-1" class="quiz-screen space-y-5">
+                    <h4 class="font-serif text-xl sm:text-2xl text-stone-900 font-semibold leading-snug">Di mana lokasi atau aktivitas utama saat Anda menggunakan parfum ini?</h4>
+                    <div class="grid grid-cols-2 gap-4">
+                        <button onclick="selectQuizOption(1, 'formal')" class="p-5 bg-white border border-stone-200 rounded-2xl flex flex-col items-center justify-center text-center hover:border-atelier-emerald hover:bg-stone-50/50 transition duration-300">
+                            <span class="text-3xl mb-3">👔</span>
+                            <span class="text-sm font-bold text-stone-800 block">Kantor / Formal</span>
+                            <span class="text-[10px] text-stone-400 mt-0.5">Profesional & Berwibawa</span>
+                        </button>
+                        <button onclick="selectQuizOption(1, 'casual')" class="p-5 bg-white border border-stone-200 rounded-2xl flex flex-col items-center justify-center text-center hover:border-atelier-emerald hover:bg-stone-50/50 transition duration-300">
+                            <span class="text-3xl mb-3">☕</span>
+                            <span class="text-sm font-bold text-stone-800 block">Casual / Harian</span>
+                            <span class="text-[10px] text-stone-400 mt-0.5">Santai & Menyenangkan</span>
+                        </button>
+                        <button onclick="selectQuizOption(1, 'party')" class="p-5 bg-white border border-stone-200 rounded-2xl flex flex-col items-center justify-center text-center hover:border-atelier-emerald hover:bg-stone-50/50 transition duration-300">
+                            <span class="text-3xl mb-3">✨</span>
+                            <span class="text-sm font-bold text-stone-800 block">Pesta / Malam</span>
+                            <span class="text-[10px] text-stone-400 mt-0.5">Mewah & Menawan Hati</span>
+                        </button>
+                        <button onclick="selectQuizOption(1, 'sport')" class="p-5 bg-white border border-stone-200 rounded-2xl flex flex-col items-center justify-center text-center hover:border-atelier-emerald hover:bg-stone-50/50 transition duration-300">
+                            <span class="text-3xl mb-3">🏃‍♂️</span>
+                            <span class="text-sm font-bold text-stone-800 block">Olahraga / Outdoor</span>
+                            <span class="text-[10px] text-stone-400 mt-0.5">Segar & Penuh Energi</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- QUIZ STEP 2: VIBE AROMA -->
+                <div id="quiz-screen-2" class="quiz-screen hidden space-y-5">
+                    <h4 class="font-serif text-xl sm:text-2xl text-stone-900 font-semibold leading-snug">Karakter atau getaran aroma (vibe) seperti apa yang ingin Anda pancarkan?</h4>
+                    <div class="grid grid-cols-2 gap-4">
+                        <button onclick="selectQuizOption(2, 'sweet')" class="p-5 bg-white border border-stone-200 rounded-2xl flex flex-col items-center justify-center text-center hover:border-atelier-emerald hover:bg-stone-50/50 transition duration-300">
+                            <span class="text-3xl mb-3">🍦</span>
+                            <span class="text-sm font-bold text-stone-800 block">Manis / Gourmand</span>
+                            <span class="text-[10px] text-stone-400 mt-0.5">Vanilla, Kopi, Karamel</span>
+                        </button>
+                        <button onclick="selectQuizOption(2, 'fresh')" class="p-5 bg-white border border-stone-200 rounded-2xl flex flex-col items-center justify-center text-center hover:border-atelier-emerald hover:bg-stone-50/50 transition duration-300">
+                            <span class="text-3xl mb-3">🍋</span>
+                            <span class="text-sm font-bold text-stone-800 block">Segar / Citrus</span>
+                            <span class="text-[10px] text-stone-400 mt-0.5">Bergamot, Jeruk, Mint</span>
+                        </button>
+                        <button onclick="selectQuizOption(2, 'floral')" class="p-5 bg-white border border-stone-200 rounded-2xl flex flex-col items-center justify-center text-center hover:border-atelier-emerald hover:bg-stone-50/50 transition duration-300">
+                            <span class="text-3xl mb-3">🌹</span>
+                            <span class="text-sm font-bold text-stone-800 block">Mewah / Floral</span>
+                            <span class="text-[10px] text-stone-400 mt-0.5">Mawar, Melati, Lavender</span>
+                        </button>
+                        <button onclick="selectQuizOption(2, 'woody')" class="p-5 bg-white border border-stone-200 rounded-2xl flex flex-col items-center justify-center text-center hover:border-atelier-emerald hover:bg-stone-50/50 transition duration-300">
+                            <span class="text-3xl mb-3">🪵</span>
+                            <span class="text-sm font-bold text-stone-800 block">Eksotis / Woody</span>
+                            <span class="text-[10px] text-stone-400 mt-0.5">Cendana, Oud, Kulit</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- QUIZ STEP 3: KETAHANAN -->
+                <div id="quiz-screen-3" class="quiz-screen hidden space-y-5">
+                    <h4 class="font-serif text-xl sm:text-2xl text-stone-900 font-semibold leading-snug">Seberapa lama Anda menginginkan aroma parfum bertahan di tubuh Anda?</h4>
+                    <div class="grid grid-cols-3 gap-3">
+                        <button onclick="selectQuizOption(3, '4-6')" class="p-5 bg-white border border-stone-200 rounded-2xl flex flex-col items-center justify-center text-center hover:border-atelier-emerald hover:bg-stone-50/50 transition duration-300">
+                            <span class="text-3xl mb-2">⏱️</span>
+                            <span class="text-xs font-bold text-stone-800">4-6 Jam</span>
+                            <span class="text-[9px] text-stone-400 mt-1">Cukup untuk aktivitas singkat</span>
+                        </button>
+                        <button onclick="selectQuizOption(3, '8-12')" class="p-5 bg-white border border-stone-200 rounded-2xl flex flex-col items-center justify-center text-center hover:border-atelier-emerald hover:bg-stone-50/50 transition duration-300">
+                            <span class="text-3xl mb-2">⏳</span>
+                            <span class="text-xs font-bold text-stone-800">8-12 Jam</span>
+                            <span class="text-[9px] text-stone-400 mt-1">Sempurna untuk seharian kerja</span>
+                        </button>
+                        <button onclick="selectQuizOption(3, '24')" class="p-5 bg-white border border-stone-200 rounded-2xl flex flex-col items-center justify-center text-center hover:border-atelier-emerald hover:bg-stone-50/50 transition duration-300">
+                            <span class="text-3xl mb-2">👑</span>
+                            <span class="text-xs font-bold text-stone-800">Sangat Awet</span>
+                            <span class="text-[9px] text-stone-400 mt-1">Melekat di pakaian berhari-hari</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- QUIZ STEP 4: BUDGET -->
+                <div id="quiz-screen-4" class="quiz-screen hidden space-y-5">
+                    <h4 class="font-serif text-xl sm:text-2xl text-stone-900 font-semibold leading-snug">Berapa alokasi budget belanja parfum Anda saat ini?</h4>
+                    <div class="grid grid-cols-3 gap-3">
+                        <button onclick="selectQuizOption(4, 'low')" class="p-5 bg-white border border-stone-200 rounded-2xl flex flex-col items-center justify-center text-center hover:border-atelier-emerald hover:bg-stone-50/50 transition duration-300">
+                            <span class="text-2xl mb-2">🪙</span>
+                            <span class="text-xs font-bold text-stone-800">&lt; Rp 100rb</span>
+                            <span class="text-[9px] text-stone-400 mt-1">Eksperimen Pemula</span>
+                        </button>
+                        <button onclick="selectQuizOption(4, 'mid')" class="p-5 bg-white border border-stone-200 rounded-2xl flex flex-col items-center justify-center text-center hover:border-atelier-emerald hover:bg-stone-50/50 transition duration-300">
+                            <span class="text-2xl mb-2">💵</span>
+                            <span class="text-xs font-bold text-stone-800">Rp 100k - 250k</span>
+                            <span class="text-[9px] text-stone-400 mt-1">Rekomendasi Terbaik</span>
+                        </button>
+                        <button onclick="selectQuizOption(4, 'high')" class="p-5 bg-white border border-stone-200 rounded-2xl flex flex-col items-center justify-center text-center hover:border-atelier-emerald hover:bg-stone-50/50 transition duration-300">
+                            <span class="text-2xl mb-2">💎</span>
+                            <span class="text-xs font-bold text-stone-800">&gt; Rp 250rb</span>
+                            <span class="text-[9px] text-stone-400 mt-1">Ekstra Kemewahan</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- RECOMMENDATION RESULT SCREEN (HIDDEN BY DEFAULT) -->
+                <div id="quiz-screen-result" class="quiz-screen hidden space-y-6 text-center">
+                    <div class="inline-flex items-center justify-center w-20 h-20 rounded-full bg-atelier-emerald/10 text-atelier-emerald mb-2">
+                        <i class="fa-solid fa-flask-amber text-4xl"></i>
+                    </div>
+                    <div class="space-y-2">
+                        <span class="text-xs font-bold uppercase tracking-[0.2em] text-atelier-taupeDark">Hasil Rekomendasi Mutlak</span>
+                        <h4 id="rec-aroma-title" class="font-serif text-3xl font-bold text-stone-900">Black Opium Essence</h4>
+                        <p id="rec-aroma-sub" class="text-xs text-stone-500 font-semibold tracking-wider uppercase">INSPIRED BY YSL BLACK OPIUM</p>
+                    </div>
+                    <div class="max-w-md mx-auto p-4 bg-white border border-stone-200 rounded-2xl">
+                        <p id="rec-aroma-desc" class="text-stone-600 text-xs font-light leading-relaxed">
+                            Aroma manis bernuansa kopi, vanilla, dan kelopak melati putih melahirkan impresi sensual, karismatik, hangat sekaligus memikat siapa pun di sekitar Anda.
+                        </p>
+                    </div>
+                    <div class="flex flex-col gap-2 max-w-sm mx-auto pt-4">
+                        <button onclick="applyQuizRecommendation()" class="w-full bg-atelier-emerald hover:bg-atelier-emeraldLight text-white font-bold py-4 rounded-full text-xs uppercase tracking-widest transition-all text-center flex items-center justify-center shadow-lg">
+                            Kustomisasi Aroma Ini Sekarang <i class="fa-solid fa-arrow-right ml-2"></i>
+                        </button>
+                        <button onclick="resetQuiz()" class="text-xs font-bold text-stone-400 hover:text-stone-700 uppercase tracking-wider py-2">
+                            Ulangi Kuis <i class="fa-solid fa-rotate-left ml-1"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Customizer Builder Section -->
+    <section id="customizer-section" class="py-20 px-4 md:px-12 bg-white scroll-mt-16">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="font-serif text-lg text-atelier-taupeDark italic block mb-2">Studio Kustomisasi</span>
+                <h2 class="font-serif text-3xl md:text-5xl font-light uppercase tracking-wide text-atelier-emerald">MULAI MERACIK SEKARANG</h2>
+                <div class="w-24 h-[2px] bg-atelier-gold mx-auto my-4"></div>
+                <p class="text-stone-600 text-sm md:text-base font-light">
+                    Personalisasikan minyak parfum global favorit Anda dalam 5 langkah eksklusif. Nilai harga terhitung secara transparan dan akurat.
+                </p>
+            </div>
+
+            <!-- Stepper Progress Tracker (5 steps) -->
+            <div class="mb-12 max-w-5xl mx-auto px-4">
+                <div class="flex items-center justify-between relative">
+                    <!-- Base horizontal line -->
+                    <div class="absolute left-0 right-0 top-1/2 h-[2px] bg-stone-200 -translate-y-1/2 z-0"></div>
+                    <div id="step-progress-line" class="absolute left-0 top-1/2 h-[2px] bg-atelier-emerald -translate-y-1/2 z-0 transition-all duration-500" style="width: 0%;"></div>
+
+                    <!-- Step 1 Indicator -->
+                    <div class="relative z-10 flex flex-col items-center step-indicator" data-step="1">
+                        <button onclick="goToStep(1)" class="w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center border-2 transition-all duration-300 bg-atelier-emerald text-white border-atelier-emerald font-bold">
+                            1
+                        </button>
+                        <span class="text-[9px] md:text-[10px] font-bold tracking-widest uppercase mt-2 hidden sm:block text-atelier-emerald">Aroma</span>
+                    </div>
+                    <!-- Step 2 Indicator -->
+                    <div class="relative z-10 flex flex-col items-center step-indicator" data-step="2">
+                        <button onclick="goToStep(2)" class="w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center border-2 transition-all duration-300 bg-stone-100 text-stone-400 border-stone-200 font-bold">
+                            2
+                        </button>
+                        <span class="text-[9px] md:text-[10px] font-bold tracking-widest uppercase mt-2 hidden sm:block text-stone-400">Kepekatan</span>
+                    </div>
+                    <!-- Step 3 Indicator -->
+                    <div class="relative z-10 flex flex-col items-center step-indicator" data-step="3">
+                        <button onclick="goToStep(3)" class="w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center border-2 transition-all duration-300 bg-stone-100 text-stone-400 border-stone-200 font-bold">
+                            3
+                        </button>
+                        <span class="text-[9px] md:text-[10px] font-bold tracking-widest uppercase mt-2 hidden sm:block text-stone-400">Volume</span>
+                    </div>
+                    <!-- Step 4 Indicator -->
+                    <div class="relative z-10 flex flex-col items-center step-indicator" data-step="4">
+                        <button onclick="goToStep(4)" class="w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center border-2 transition-all duration-300 bg-stone-100 text-stone-400 border-stone-200 font-bold">
+                            4
+                        </button>
+                        <span class="text-[9px] md:text-[10px] font-bold tracking-widest uppercase mt-2 hidden sm:block text-stone-400">Botol</span>
+                    </div>
+                    <!-- Step 5 Indicator -->
+                    <div class="relative z-10 flex flex-col items-center step-indicator" data-step="5">
+                        <button onclick="goToStep(5)" class="w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center border-2 transition-all duration-300 bg-stone-100 text-stone-400 border-stone-200 font-bold">
+                            5
+                        </button>
+                        <span class="text-[9px] md:text-[10px] font-bold tracking-widest uppercase mt-2 hidden sm:block text-stone-400">Penerima & Bayar</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Workspace Layout Grid -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+                
+                <!-- Left Panel: Live Dynamic Bottle Preview -->
+                <div class="lg:col-span-4 bg-atelier-cream border border-stone-200/80 p-8 rounded-[2rem] flex flex-col justify-between items-center shadow-md relative min-h-[490px]">
+                    <div class="w-full text-center">
+                        <span class="text-[9px] uppercase tracking-[0.2em] text-atelier-emerald font-semibold bg-atelier-emerald/10 px-3 py-1 rounded-full">Pratinjau Racikan</span>
+                        <div class="w-12 h-[1px] bg-atelier-gold mx-auto mt-2"></div>
+                    </div>
+
+                    <!-- Dynamic SVG Visual Rendering -->
+                    <div class="relative flex justify-center my-6">
+                        <svg id="dynamic-perfume-svg" class="w-40 h-64 drop-shadow-[0_15px_30px_rgba(15,56,46,0.12)] transition-all duration-500" viewBox="0 0 100 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Cap Area (changes dynamically) -->
+                            <rect id="dynamic-svg-cap" x="30" y="5" width="40" height="24" rx="4" fill="#0F382E" stroke="#C5A880" stroke-width="1.5"/>
+                            <rect x="25" y="29" width="50" height="5" fill="#C5A880"/>
+                            <!-- Inner pump Stem -->
+                            <rect x="42" y="34" width="16" height="7" fill="#EAE5DC"/>
+                            
+                            <!-- Main Glass Body container shape -->
+                            <path id="dynamic-svg-glass" d="M12 41H88C91 41 94 44 94 47V135C94 140.5 89.5 145 84 145H16C10.5 145 6 140.5 6 135V47C6 44 9 41 12 41Z" fill="white" fill-opacity="0.1" stroke="#0F382E" stroke-width="2"/>
+                            
+                            <!-- Dynamic Liquid Layer inside Bottle -->
+                            <path id="dynamic-svg-liquid" d="M7 85V135C7 140 11 144 16 144H84C89 144 93 140 93 135V85H7Z" fill="#C5A880" fill-opacity="0.75"/>
+                            
+                            <!-- Internal Tube (Straw) -->
+                            <line x1="50" y1="34" x2="50" y2="140" stroke="#C5B3A1" stroke-width="1" stroke-dasharray="3,3"/>
+                            
+                            <!-- Label inside -->
+                            <rect x="22" y="75" width="56" height="42" rx="3" fill="#1C1B19" fill-opacity="0.95" stroke="#C5A880" stroke-width="1"/>
+                            <text id="dynamic-svg-title" x="50" y="91" font-family="serif" font-weight="bold" font-size="6.5" fill="#C5A880" text-anchor="middle" letter-spacing="0.5">BLACK OPIUM</text>
+                            <text id="dynamic-svg-desc" x="50" y="102" font-family="sans-serif" font-weight="semibold" font-size="4.5" fill="white" text-anchor="middle">EAU DE PARFUM</text>
+                            <text id="dynamic-svg-vol-tag" x="50" y="111" font-family="sans-serif" font-size="4" fill="#C5A880" text-anchor="middle">50ml</text>
+                        </svg>
+                    </div>
+
+                    <!-- Live Custom Label Information -->
+                    <div class="w-full text-center space-y-1 mb-4">
+                        <span class="text-[9px] uppercase tracking-widest text-stone-400 font-bold block">Aroma Terpilih</span>
+                        <h4 id="live-display-aroma-title" class="font-serif text-lg font-bold text-stone-900 leading-tight">Noir Opium</h4>
+                        <span id="live-display-inspired-brand" class="text-[10px] uppercase font-bold text-atelier-taupeDark">YSL Black Opium</span>
+                    </div>
+
+                    <!-- Real-Time Shopping Cart Item Invoice Bill Summary -->
+                    <div class="w-full bg-white/95 p-4 rounded-2xl border border-stone-200/80 text-xs text-stone-700 space-y-2.5 shadow-sm">
+                        <div class="flex justify-between items-center border-b border-stone-100 pb-2">
+                            <span>Profile Aroma:</span>
+                            <span id="live-summary-scent" class="font-bold text-stone-900">Sweet Gourmand</span>
+                        </div>
+                        <div class="flex justify-between items-center border-b border-stone-100 pb-2">
+                            <span>Kepekatan:</span>
+                            <span id="live-summary-concentration" class="font-bold text-stone-900">EDP 15%</span>
+                        </div>
+                        <div class="flex justify-between items-center border-b border-stone-100 pb-2">
+                            <span>Volume:</span>
+                            <span id="live-summary-volume" class="font-bold text-stone-900">50 ml (Expert)</span>
+                        </div>
+                        <div class="flex justify-between items-center border-b border-stone-100 pb-2">
+                            <span>Bentuk Botol:</span>
+                            <span id="live-summary-bottle" class="font-bold text-stone-900">Royal Octagon Faceted Crystal</span>
+                        </div>
+                        <div class="flex justify-between items-center border-b border-stone-100 pb-2">
+                            <span>Ongkir Kurir:</span>
+                            <span class="font-bold text-emerald-600 uppercase text-[10px] tracking-wider">Gratis Ongkir</span>
+                        </div>
+                        <div class="flex justify-between items-center pt-1">
+                            <span class="text-sm font-bold text-stone-900">Total Harga:</span>
+                            <span id="live-summary-total-price" class="text-base font-bold text-atelier-emerald">Rp 245.000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Panel: Step Panels Container -->
+                <div class="lg:col-span-8 bg-atelier-cream border border-stone-200/80 p-6 md:p-10 rounded-[2rem] shadow-md flex flex-col justify-between">
+                    
+                    <!-- STEP 1: PILIH AROMA PARFUM -->
+                    <div id="step-content-1" class="step-panel-builder space-y-6">
+                        <div>
+                            <span class="text-xs font-bold text-atelier-taupeDark tracking-widest uppercase block">Langkah 1</span>
+                            <h3 class="font-serif text-2xl md:text-3xl text-stone-900 font-semibold uppercase">PILIH AROMA PARFUM</h3>
+                        </div>
+                        
+                        <p class="text-stone-500 text-sm font-light">
+                            Berikut adalah daftar koleksi *Inspired Perfume* terlaris dunia dari Rumah Aroma. Cari aroma favorit Anda melalui bilah pencarian di atas, atau pilih langsung dari katalog premium di bawah:
+                        </p>
+
+                        <!-- Scent Selector Grid -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-h-[350px] overflow-y-auto pr-2">
+                            <!-- Populated dynamically with JavaScript for premium experience -->
+                        </div>
+                    </div>
+
+                    <!-- STEP 2: KONSENTRASI PARFUM -->
+                    <div id="step-content-2" class="step-panel-builder hidden space-y-6">
+                        <div>
+                            <span class="text-xs font-bold text-atelier-taupeDark tracking-widest uppercase block">Langkah 2</span>
+                            <h3 class="font-serif text-2xl md:text-3xl text-stone-900 font-semibold uppercase">PILIH KONSENTRASI PARFUM</h3>
+                        </div>
+
+                        <p class="text-stone-500 text-sm font-light">
+                            Setiap tingkat kepekatan menggunakan rasio minyak murni organik murni (*pure oil*) yang tinggi dengan pelarut pangan organik berkualitas tinggi agar aman di kulit sensitif Anda.
+                        </p>
+
+                        <div class="space-y-4">
+                            <!-- EDP 15% -->
+                            <div onclick="selectConcentration('EDP 15%', 1.0)" class="concentration-card bg-white border border-stone-200 hover:border-atelier-emerald p-5 rounded-2xl cursor-pointer transition-all flex items-start justify-between" data-conc="EDP 15%">
+                                <div class="flex items-center space-x-4">
+                                    <input type="radio" name="conc-radio" id="conc-15" class="accent-atelier-emerald h-4 w-4" checked>
+                                    <div>
+                                        <span class="font-serif text-base font-bold text-stone-900 block">Eau de Parfum (EDP) 15%</span>
+                                        <span class="text-xs text-stone-500 block mt-0.5">Ketahanan: 5 - 6 jam • Sillage: Sedang</span>
+                                    </div>
+                                </div>
+                                <span class="text-xs bg-stone-100 text-stone-600 px-3 py-1 rounded-full font-bold">Standard</span>
+                            </div>
+
+                            <!-- EDP 20% -->
+                            <div onclick="selectConcentration('EDP 20%', 1.15)" class="concentration-card bg-white border border-stone-200 hover:border-atelier-emerald p-5 rounded-2xl cursor-pointer transition-all flex items-start justify-between" data-conc="EDP 20%">
+                                <div class="flex items-center space-x-4">
+                                    <input type="radio" name="conc-radio" id="conc-20" class="accent-atelier-emerald h-4 w-4">
+                                    <div>
+                                        <span class="font-serif text-base font-bold text-stone-900 block">Eau de Parfum (EDP) 20%</span>
+                                        <span class="text-xs text-stone-500 block mt-0.5">Ketahanan: 6 - 8 jam • Sillage: Luas</span>
+                                    </div>
+                                </div>
+                                <span class="text-xs bg-atelier-emerald/10 text-atelier-emerald px-3 py-1 rounded-full font-bold">+15% Harga</span>
+                            </div>
+
+                            <!-- Extrait 30% -->
+                            <div onclick="selectConcentration('Extrait 30%', 1.35)" class="concentration-card bg-white border border-stone-200 hover:border-atelier-emerald p-5 rounded-2xl cursor-pointer transition-all flex items-start justify-between" data-conc="Extrait 30%">
+                                <div class="flex items-center space-x-4">
+                                    <input type="radio" name="conc-radio" id="conc-30" class="accent-atelier-emerald h-4 w-4">
+                                    <div>
+                                        <span class="font-serif text-base font-bold text-stone-900 block">Extrait de Parfum 30%</span>
+                                        <span class="text-xs text-stone-500 block mt-0.5">Ketahanan: 8 - 12 jam • Sillage: Sangat Luas</span>
+                                    </div>
+                                </div>
+                                <span class="text-xs bg-amber-100 text-amber-800 px-3 py-1 rounded-full font-bold">+35% Harga</span>
+                            </div>
+
+                            <!-- Extrait 40% -->
+                            <div onclick="selectConcentration('Extrait 40%', 1.5)" class="concentration-card bg-white border border-stone-200 hover:border-atelier-emerald p-5 rounded-2xl cursor-pointer transition-all flex items-start justify-between" data-conc="Extrait 40%">
+                                <div class="flex items-center space-x-4">
+                                    <input type="radio" name="conc-radio" id="conc-40" class="accent-atelier-emerald h-4 w-4">
+                                    <div>
+                                        <span class="font-serif text-base font-bold text-stone-900 block">Extrait de Parfum 40%</span>
+                                        <span class="text-xs text-stone-500 block mt-0.5">Ketahanan: 24 Jam • Sillage: Sangat Kuat & Pekat</span>
+                                    </div>
+                                </div>
+                                <span class="text-xs bg-red-100 text-red-800 px-3 py-1 rounded-full font-bold">+50% Harga</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- STEP 3: PILIH VOLUME -->
+                    <div id="step-content-3" class="step-panel-builder hidden space-y-6">
+                        <div>
+                            <span class="text-xs font-bold text-atelier-taupeDark tracking-widest uppercase block">Langkah 3</span>
+                            <h3 class="font-serif text-2xl md:text-3xl text-stone-900 font-semibold uppercase">PILIH UKURAN VOLUME</h3>
+                        </div>
+
+                        <p class="text-stone-500 text-sm font-light">
+                            Pilih kapasitas isi cairan parfum Anda. Ukuran botol akan memengaruhi ketersediaan desain botol di langkah berikutnya.
+                        </p>
+
+                        <div class="space-y-6">
+                            <!-- Category 1: Discovery Size -->
+                            <div>
+                                <h4 class="text-xs font-bold uppercase tracking-[0.2em] text-atelier-taupeDark mb-3 flex items-center">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-atelier-gold mr-2"></span> Discovery Size
+                                </h4>
+                                <div class="grid grid-cols-2 gap-4">
+                                    <button onclick="selectVolume('5ml', 'Discovery', 45000)" class="volume-btn p-5 bg-white border border-stone-200 rounded-2xl flex flex-col items-center justify-center text-center hover:border-atelier-emerald transition duration-300" data-vol="5ml">
+                                        <span class="text-xs text-stone-400 font-semibold tracking-wider">Mini Travel Vial</span>
+                                        <span class="font-serif text-2xl font-bold text-stone-950 mt-1">5 ml</span>
+                                        <span class="text-[10px] bg-stone-100 text-stone-500 px-2 py-0.5 rounded-full mt-2 font-bold">Ringkas & Portable</span>
+                                    </button>
+                                    <button onclick="selectVolume('10ml', 'Discovery', 75000)" class="volume-btn p-5 bg-white border border-stone-200 rounded-2xl flex flex-col items-center justify-center text-center hover:border-atelier-emerald transition duration-300" data-vol="10ml">
+                                        <span class="text-xs text-stone-400 font-semibold tracking-wider">Discovery Pocket</span>
+                                        <span class="font-serif text-2xl font-bold text-stone-950 mt-1">10 ml</span>
+                                        <span class="text-[10px] bg-stone-100 text-stone-500 px-2 py-0.5 rounded-full mt-2 font-bold">Cocok di Tas Kecil</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Category 2: Beginner Size -->
+                            <div>
+                                <h4 class="text-xs font-bold uppercase tracking-[0.2em] text-atelier-taupeDark mb-3 flex items-center">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-atelier-gold mr-2"></span> Beginner Size
+                                </h4>
+                                <div class="grid grid-cols-2 gap-4">
+                                    <button onclick="selectVolume('15ml', 'Beginner', 115000)" class="volume-btn p-5 bg-white border border-stone-200 rounded-2xl flex flex-col items-center justify-center text-center hover:border-atelier-emerald transition duration-300" data-vol="15ml">
+                                        <span class="text-xs text-stone-400 font-semibold tracking-wider">Daily Essential</span>
+                                        <span class="font-serif text-2xl font-bold text-stone-950 mt-1">15 ml</span>
+                                        <span class="text-[10px] bg-stone-100 text-stone-500 px-2 py-0.5 rounded-full mt-2 font-bold">Bestseller Pemula</span>
+                                    </button>
+                                    <button onclick="selectVolume('30ml', 'Beginner', 175000)" class="volume-btn p-5 bg-white border border-stone-200 rounded-2xl flex flex-col items-center justify-center text-center hover:border-atelier-emerald transition duration-300" data-vol="30ml">
+                                        <span class="text-xs text-stone-400 font-semibold tracking-wider">Signature Daily</span>
+                                        <span class="font-serif text-2xl font-bold text-stone-950 mt-1">30 ml</span>
+                                        <span class="text-[10px] bg-stone-100 text-stone-500 px-2 py-0.5 rounded-full mt-2 font-bold">Pemakaian 1-2 Bulan</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Category 3: Expert Size -->
+                            <div>
+                                <h4 class="text-xs font-bold uppercase tracking-[0.2em] text-atelier-taupeDark mb-3 flex items-center">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-atelier-gold mr-2"></span> Expert Size
+                                </h4>
+                                <div class="grid grid-cols-2 gap-4">
+                                    <button onclick="selectVolume('50ml', 'Expert', 245000)" class="volume-btn p-5 bg-white border border-stone-200 rounded-2xl flex flex-col items-center justify-center text-center hover:border-atelier-emerald transition duration-300" data-vol="50ml">
+                                        <span class="text-xs text-stone-400 font-semibold tracking-wider">Atelier Boutique</span>
+                                        <span class="font-serif text-2xl font-bold text-stone-950 mt-1">50 ml</span>
+                                        <span class="text-[10px] bg-stone-100 text-stone-500 px-2 py-0.5 rounded-full mt-2 font-bold">Ukuran Butik Standar</span>
+                                    </button>
+                                    <button onclick="selectVolume('100ml', 'Expert', 395000)" class="volume-btn p-5 bg-white border border-stone-200 rounded-2xl flex flex-col items-center justify-center text-center hover:border-atelier-emerald transition duration-300" data-vol="100ml">
+                                        <span class="text-xs text-stone-400 font-semibold tracking-wider">Grand Collector Size</span>
+                                        <span class="font-serif text-2xl font-bold text-stone-950 mt-1">100 ml</span>
+                                        <span class="text-[10px] bg-stone-100 text-stone-500 px-2 py-0.5 rounded-full mt-2 font-bold">Kemewahan Tanpa Batas</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- STEP 4: PILIH BENTUK BOTOL (KONDISIONAL) -->
+                    <div id="step-content-4" class="step-panel-builder hidden space-y-6">
+                        <div>
+                            <span class="text-xs font-bold text-atelier-taupeDark tracking-widest uppercase block">Langkah 4</span>
+                            <h3 class="font-serif text-2xl md:text-3xl text-stone-900 font-semibold uppercase">PILIH DESAIN BOTOL</h3>
+                        </div>
+
+                        <p class="text-stone-500 text-sm font-light">
+                            Katalog botol di bawah ini disaring secara dinamis untuk menyesuaikan volume pilihan Anda: <span id="cond-selected-volume-badge" class="font-bold text-atelier-emerald">50ml</span>.
+                        </p>
+
+                        <!-- Dynamic Bottle Cards Grid -->
+                        <div id="dynamic-bottles-grid" class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                            <!-- Populated with JS depending on Step 3 Selection -->
+                        </div>
+                    </div>
+
+                    <!-- STEP 5: DETAIL PENERIMA & PEMBAYARAN -->
+                    <div id="step-content-5" class="step-panel-builder hidden space-y-6">
+                        <div>
+                            <span class="text-xs font-bold text-atelier-taupeDark tracking-widest uppercase block">Langkah 5</span>
+                            <h3 class="font-serif text-2xl md:text-3xl text-stone-900 font-semibold uppercase">DATA PENERIMA & PEMBAYARAN</h3>
+                        </div>
+
+                        <p class="text-stone-500 text-sm font-light">
+                            Mohon isikan alamat dengan lengkap dan pilih metode pembayaran di bawah.
+                        </p>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <!-- Left: Form inputs -->
+                            <div class="space-y-4">
+                                <h4 class="text-xs font-bold uppercase tracking-wider text-stone-500 border-b pb-1">Data Pengiriman</h4>
+                                <!-- Nama Lengkap -->
+                                <div class="space-y-1">
+                                    <label class="block text-xs font-bold uppercase tracking-wider text-stone-700">Nama Lengkap Penerima <span class="text-red-500">*</span></label>
+                                    <input type="text" id="cust-fullname" class="w-full bg-white border border-stone-300 rounded-xl px-4 py-3 text-stone-900 focus:outline-none focus:ring-2 focus:ring-atelier-emerald text-sm shadow-inner" placeholder="Contoh: Ibrahim Wijaya">
+                                </div>
+
+                                <!-- No WA / Telepon -->
+                                <div class="space-y-1">
+                                    <label class="block text-xs font-bold uppercase tracking-wider text-stone-700">Nomor Handphone / WhatsApp <span class="text-red-500">*</span></label>
+                                    <div class="relative">
+                                        <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-stone-500 text-sm font-bold">
+                                            +62
+                                        </div>
+                                        <input type="tel" id="cust-whatsapp" class="w-full bg-white border border-stone-300 rounded-xl pl-14 pr-4 py-3 text-stone-900 focus:outline-none focus:ring-2 focus:ring-atelier-emerald text-sm shadow-inner" placeholder="8123456789">
+                                    </div>
+                                </div>
+
+                                <!-- Alamat Lengkap -->
+                                <div class="space-y-1">
+                                    <label class="block text-xs font-bold uppercase tracking-wider text-stone-700">Alamat Lengkap Penerima <span class="text-red-500">*</span></label>
+                                    <textarea id="cust-address" rows="3" class="w-full bg-white border border-stone-300 rounded-xl px-4 py-3 text-stone-900 focus:outline-none focus:ring-2 focus:ring-atelier-emerald text-sm shadow-inner" placeholder="Sebutkan nama jalan, No. Rumah, RT/RW, kelurahan, kecamatan, kabupaten/kota, serta kode pos..."></textarea>
+                                </div>
+                            </div>
+
+                            <!-- Right: Payment & Method -->
+                            <div class="space-y-4">
+                                <h4 class="text-xs font-bold uppercase tracking-wider text-stone-500 border-b pb-1">Pilih Metode Transaksi</h4>
+                                
+                                <div class="space-y-2">
+                                    <label onclick="selectPaymentMethod('QRIS')" class="border border-stone-200 hover:border-atelier-emerald p-4 rounded-xl cursor-pointer flex items-center justify-between text-xs bg-white hover:bg-stone-50/50" data-pay="QRIS">
+                                        <div class="flex items-center space-x-3">
+                                            <input type="radio" name="pay-radio" value="QRIS" checked class="accent-atelier-emerald">
+                                            <span class="font-bold">QRIS Pembayaran Instan</span>
+                                        </div>
+                                        <span class="text-[9px] bg-emerald-100 text-emerald-800 font-bold px-2 py-0.5 rounded">Otomatis</span>
+                                    </label>
+
+                                    <label onclick="selectPaymentMethod('E-Wallet')" class="border border-stone-200 hover:border-atelier-emerald p-4 rounded-xl cursor-pointer flex items-center justify-between text-xs bg-white hover:bg-stone-50/50" data-pay="E-Wallet">
+                                        <div class="flex items-center space-x-3">
+                                            <input type="radio" name="pay-radio" value="E-Wallet" class="accent-atelier-emerald">
+                                            <span class="font-bold">E-Wallet (OVO / GoPay / DANA)</span>
+                                        </div>
+                                    </label>
+
+                                    <label onclick="selectPaymentMethod('Transfer Bank')" class="border border-stone-200 hover:border-atelier-emerald p-4 rounded-xl cursor-pointer flex items-center justify-between text-xs bg-white hover:bg-stone-50/50" data-pay="Transfer Bank">
+                                        <div class="flex items-center space-x-3">
+                                            <input type="radio" name="pay-radio" value="Transfer Bank" class="accent-atelier-emerald">
+                                            <span class="font-bold">Transfer Bank Manual</span>
+                                        </div>
+                                        <span class="text-[9px] bg-stone-100 text-stone-600 px-2 py-0.5 rounded">Mandiri / BCA</span>
+                                    </label>
+                                </div>
+
+                                <!-- Summary Box in Right checkout -->
+                                <div class="bg-white border border-stone-200 rounded-xl p-4 space-y-2 text-[11px] text-stone-700 shadow-sm">
+                                    <div class="flex justify-between border-b pb-1">
+                                        <span>Racikan:</span>
+                                        <span id="invoice-scent-name" class="font-bold text-stone-900 italic">"Noir Opium"</span>
+                                    </div>
+                                    <div class="flex justify-between border-b pb-1">
+                                        <span>Konfigurasi:</span>
+                                        <span id="invoice-config" class="font-bold text-stone-900">EDP 15% - 50 ml</span>
+                                    </div>
+                                    <div class="flex justify-between pt-1 font-bold text-sm text-stone-900">
+                                        <span>Total Tagihan:</span>
+                                        <span id="invoice-total" class="text-atelier-emerald">Rp 245.000</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- STEPPER NAVIGATION BUTTONS -->
+                    <div class="flex justify-between items-center pt-8 border-t border-stone-200/60 mt-8">
+                        <button type="button" id="prev-step-btn" onclick="prevStep()" class="text-stone-500 hover:text-stone-900 px-5 py-3 text-sm font-semibold tracking-wider uppercase transition-all disabled:opacity-30 flex items-center" disabled>
+                            <i class="fa-solid fa-arrow-left mr-2"></i> Kembali
+                        </button>
+                        
+                        <button type="button" id="next-step-btn" onclick="nextStep()" class="bg-atelier-emerald hover:bg-atelier-emeraldLight text-white font-bold px-8 py-3.5 rounded-full text-xs md:text-sm tracking-widest uppercase transition-all shadow-md flex items-center">
+                            Berikutnya <i class="fa-solid fa-arrow-right ml-2"></i>
+                        </button>
+
+                        <button type="button" id="submit-order-btn" onclick="submitCustomOrder()" class="hidden bg-atelier-gold hover:bg-stone-800 text-stone-900 hover:text-white font-bold px-8 py-3.5 rounded-full text-xs md:text-sm tracking-widest uppercase transition-all shadow-lg flex items-center">
+                            Pesan Sekarang <i class="fa-solid fa-paper-plane ml-2"></i>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Philosophy & Quality Section -->
+    <section id="philosophy" class="py-20 px-6 md:px-12 bg-atelier-emerald text-white relative overflow-hidden">
+        <div class="absolute -top-40 -left-40 w-96 h-96 bg-atelier-gold/10 rounded-full filter blur-[120px]"></div>
+        <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
+            <div class="space-y-6">
+                <span class="text-xs font-bold uppercase tracking-[0.2em] text-atelier-gold">Elegansi & Seni Alkimia Modern</span>
+                <h3 class="font-serif text-3xl md:text-4xl font-light leading-tight">Proses Eksklusif Rumah Aroma</h3>
+                <div class="w-16 h-[2px] bg-atelier-gold"></div>
+                <p class="text-stone-300 text-sm md:text-base font-light leading-relaxed">
+                    Setiap racikan parfum kustom yang Anda buat di platform kami tidak dibuat secara sembarangan. Kami mendatangkan konsentrat esensi murni berkualitas terbaik dari perkebunan Grasse di Perancis.
+                </p>
+                <div class="space-y-4">
+                    <div class="border-l-2 border-atelier-gold pl-4 py-1">
+                        <span class="font-serif text-base font-semibold block text-white">Bebas Bahan Kimia Berbahaya</span>
+                        <span class="text-xs text-stone-400">Kami menjamin 100% bebas dari kandungan paraben, zat pengikat buatan sintetis keras, atau alkohol industri berkualitas rendah yang merusak hidung manusia.</span>
+                    </div>
+                    <div class="border-l-2 border-atelier-gold pl-4 py-1">
+                        <span class="font-serif text-base font-semibold block text-white">Proses Muring Terkendali</span>
+                        <span class="text-xs text-stone-400">Setelah dikustomisasi, ramuan akan di-muring selama 48 jam di lemari bersuhu khusus sebelum dikirimkan untuk memastikan pengikatan molekul aroma stabil dan tahan lama.</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-white/5 border border-white/10 p-8 rounded-[2rem] space-y-6 flex flex-col justify-center glass-premium">
+                <div class="flex items-center space-x-4">
+                    <div class="w-12 h-12 rounded-full bg-atelier-gold/20 border border-atelier-gold/40 flex items-center justify-center text-atelier-gold">
+                        <i class="fa-solid fa-medal text-xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-serif text-lg font-semibold text-white">Garansi Kemurnian Mutlak</h4>
+                        <span class="text-xs text-stone-300">Setiap tetes adalah bentuk komitmen seni kami</span>
+                    </div>
+                </div>
+                <p class="text-xs text-stone-300 leading-relaxed">
+                    Kami yakin wewangian Anda adalah gambaran jiwa Anda. Jika hasil racikan kami tidak sesuai dengan aroma orisinal desainer dari deskripsi yang Anda inginkan, silakan hubungi Customer Service kami untuk klaim garansi retur 100%.
+                </p>
+                <div class="grid grid-cols-3 gap-4 pt-4 border-t border-white/10 text-center">
+                    <div>
+                        <span class="block font-serif text-2xl text-atelier-gold font-bold">100%</span>
+                        <span class="text-[9px] uppercase tracking-wider text-stone-400 font-bold">Bahan Organik</span>
+                    </div>
+                    <div>
+                        <span class="block font-serif text-2xl text-atelier-gold font-bold">48 Jam</span>
+                        <span class="text-[9px] uppercase tracking-wider text-stone-400 font-bold">Waktu Muring</span>
+                    </div>
+                    <div>
+                        <span class="block font-serif text-2xl text-atelier-gold font-bold">0%</span>
+                        <span class="text-[9px] uppercase tracking-wider text-stone-400 font-bold">Sensitivitas Kulit</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 px-6 md:px-12 bg-atelier-cream scroll-mt-16">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12">
+                <span class="font-serif text-sm text-atelier-taupeDark italic block mb-2">Pertanyaan Populer</span>
+                <h3 class="font-serif text-2xl md:text-4xl font-bold text-atelier-emerald uppercase">FAQ - RUMAH AROMA</h3>
+                <div class="w-16 h-[2px] bg-atelier-gold mx-auto mt-3"></div>
+            </div>
+
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="bg-white border border-stone-200 rounded-2xl p-5 cursor-pointer" onclick="toggleFAQ(1)">
+                    <div class="flex justify-between items-center font-bold text-stone-800 text-sm sm:text-base">
+                        <span>Apakah parfum dupe ini benar-benar mirip dengan parfum brand aslinya?</span>
+                        <i id="faq-icon-1" class="fa-solid fa-chevron-down transition-transform"></i>
+                    </div>
+                    <p id="faq-answer-1" class="text-stone-500 text-xs sm:text-sm font-light leading-relaxed mt-3 hidden">
+                        Kemiripan racikan dupe kami mencapai 95% hingga 98% dari parfum desainer aslinya. Kami memformulasikan senyawa kimia organik dengan teliti berdasarkan piramida aroma utama desainer global.
+                    </p>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="bg-white border border-stone-200 rounded-2xl p-5 cursor-pointer" onclick="toggleFAQ(2)">
+                    <div class="flex justify-between items-center font-bold text-stone-800 text-sm sm:text-base">
+                        <span>Apa perbedaan konsentrasi EDP 15% dengan Extrait 40%?</span>
+                        <i id="faq-icon-2" class="fa-solid fa-chevron-down transition-transform"></i>
+                    </div>
+                    <p id="faq-answer-2" class="text-stone-500 text-xs sm:text-sm font-light leading-relaxed mt-3 hidden">
+                        EDP 15% ideal untuk penggunaan harian dengan ketahanan standar 5-6 jam. Extrait 40% merupakan konsentrasi paling premium kami yang memiliki kandungan minyak esensial sangat tinggi, melekat di pakaian hingga 24 jam dengan sillage tebal.
+                    </p>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="bg-white border border-stone-200 rounded-2xl p-5 cursor-pointer" onclick="toggleFAQ(3)">
+                    <div class="flex justify-between items-center font-bold text-stone-800 text-sm sm:text-base">
+                        <span>Mengapa bentuk botol dibatasi berdasarkan ukuran volume?</span>
+                        <i id="faq-icon-3" class="fa-solid fa-chevron-down transition-transform"></i>
+                    </div>
+                    <p id="faq-answer-3" class="text-stone-500 text-xs sm:text-sm font-light leading-relaxed mt-3 hidden">
+                        Kami mengutamakan kesesuaian fisik dan visual botol. Volume kecil (seperti 5ml & 10ml) menggunakan botol vial/spray mini, sedangkan botol kristal mewah berkapasitas besar dipersiapkan khusus untuk ukuran 50ml ke atas demi kenyamanan pegangan Anda.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal: Checkout Success & Receipt -->
+    <div id="success-modal" class="fixed inset-0 z-50 overflow-y-auto hidden bg-atelier-charcoal/85 backdrop-blur-md flex items-center justify-center p-4">
+        <div class="relative bg-white max-w-lg w-full rounded-[2rem] overflow-hidden shadow-2xl border border-stone-200 transform transition-all p-6 md:p-8 space-y-6">
+            
+            <!-- Success Animated Mark -->
+            <div class="mx-auto flex items-center justify-center h-16 w-16 rounded-full bg-emerald-100 text-emerald-600 animate-bounce">
+                <i class="fa-solid fa-check text-2xl"></i>
+            </div>
+            
+            <div class="text-center space-y-2">
+                <h3 class="font-serif text-2xl md:text-3xl font-light text-stone-900 uppercase">PESANAN ANDA DIKIRIM!</h3>
+                <p class="text-xs text-stone-500 leading-relaxed">
+                    Detail racikan kustom parfum Anda telah dikirimkan secara instan ke sistem server admin **RUMAH AROMA** via Telegram Group.
+                </p>
+            </div>
+
+            <!-- Scent Sommelier AI Happiness & Philosophy Card -->
+            <div class="bg-gradient-to-br from-stone-50 to-atelier-cream/40 border border-atelier-gold/40 p-6 rounded-3xl relative overflow-hidden space-y-3 shadow-inner">
+                <div class="absolute -right-8 -bottom-8 text-atelier-gold/15 text-7xl">
+                    <i class="fa-solid fa-scroll"></i>
+                </div>
+                <div class="flex items-center justify-between relative z-10 border-b border-stone-200/60 pb-2">
+                    <div class="flex items-center space-x-2 text-atelier-taupeDark font-bold text-[10px] uppercase tracking-[0.15em]">
+                        <span class="relative flex h-2 w-2">
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-atelier-gold opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-2 w-2 bg-atelier-gold"></span>
+                        </span>
+                        <span>✨ Filosofi & Keyakinan Aroma</span>
+                    </div>
+                    <span class="font-serif text-[10px] italic text-atelier-gold">Scent Sommelier AI</span>
+                </div>
+                <p id="rec-ai-happiness" class="text-xs text-stone-800 italic leading-relaxed font-serif font-light relative z-10">
+                    Merajut rangkaian filosofi dan ucapan selamat atas mahakarya aroma Anda...
+                </p>
+            </div>
+
+            <!-- Receipt Breakdown Container -->
+            <div class="border border-stone-200 rounded-2xl p-4 bg-stone-50/80 space-y-3 text-xs text-stone-700">
+                <div class="flex justify-between font-bold border-b border-stone-200 pb-2">
+                    <span>ID Transaksi:</span>
+                    <span id="rec-id" class="text-stone-900">RA-582910</span>
+                </div>
+                <div class="flex justify-between">
+                    <span>Nama Parfum:</span>
+                    <span id="rec-perfume-name" class="font-semibold text-stone-950 italic">"Noir Opium"</span>
+                </div>
+                <div class="flex justify-between">
+                    <span>Aroma Inspirasi:</span>
+                    <span id="rec-inspired" class="font-semibold text-stone-950">YSL Black Opium</span>
+                </div>
+                <div class="flex justify-between">
+                    <span>Konsentrasi:</span>
+                    <span id="rec-concentration" class="font-semibold text-stone-950">EDP 15%</span>
+                </div>
+                <div class="flex justify-between">
+                    <span>Ukuran Volume:</span>
+                    <span id="rec-volume" class="font-semibold text-stone-950">50 ml</span>
+                </div>
+                <div class="flex justify-between">
+                    <span>Desain Botol:</span>
+                    <span id="rec-bottle" class="font-semibold text-stone-950">Royal Octagon Faceted Crystal</span>
+                </div>
+
+                <div class="border-t border-dashed border-stone-200 my-2 pt-2 flex justify-between font-bold text-sm text-stone-900">
+                    <span>Total Pembayaran:</span>
+                    <span id="rec-total" class="text-atelier-emerald">Rp 245.000</span>
+                </div>
+                <div class="bg-amber-50 border border-amber-200 p-2.5 rounded-xl text-[11px] text-amber-800 text-center font-bold">
+                    Metode Pembayaran Preferensi: <span id="rec-payment-method" class="uppercase">QRIS</span>
+                </div>
+            </div>
+
+            <!-- Action buttons after success -->
+            <div class="space-y-2">
+                <p class="text-[10px] text-center text-stone-400">
+                    *Tim Admin kami akan mengirimkan invoice resmi beserta QRIS / Rekening Bank resmi serta update nomor resi pengiriman ke WhatsApp Anda.
+                </p>
+                <div class="flex flex-col gap-2 pt-2">
+                    <button onclick="closeSuccessModal()" class="w-full bg-stone-900 hover:bg-stone-800 text-white font-bold py-3.5 rounded-full text-xs tracking-widest uppercase transition-all text-center">
+                        Selesai & Kustom Lagi
+                    </button>
+                    <a id="wa-cs-confirm-btn" target="_blank" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3.5 rounded-full text-xs tracking-widest uppercase transition-all text-center flex items-center justify-center">
+                        <i class="fa-brands fa-whatsapp mr-2 text-sm"></i> Konfirmasi via WhatsApp CS
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer id="contact" class="bg-atelier-charcoal text-stone-400 py-16 px-6 border-t border-stone-800 text-sm">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div class="space-y-4 md:col-span-2">
+                <h4 class="font-serif text-xl text-white tracking-widest uppercase font-semibold">RUMAH AROMA</h4>
+                <p class="text-xs font-light leading-relaxed max-w-sm">
+                    Atelier khusus penyedia racikan parfum kustom yang disesuaikan secara intim dengan selera hidung Anda. Menyatukan kemewahan parfum desainer dunia dengan kustomisasi pribadi.
+                </p>
+                <div class="flex space-x-4 text-white/60">
+                    <a href="#" class="hover:text-atelier-gold transition"><i class="fa-brands fa-instagram text-lg"></i></a>
+                    <a href="#" class="hover:text-atelier-gold transition"><i class="fa-brands fa-tiktok text-lg"></i></a>
+                    <a href="#" class="hover:text-atelier-gold transition"><i class="fa-brands fa-whatsapp text-lg"></i></a>
+                </div>
+            </div>
+            <div class="space-y-4">
+                <h4 class="font-serif text-xs text-white tracking-[0.2em] uppercase font-bold">JAM OPERASIONAL ATELIER</h4>
+                <p class="text-xs font-light leading-relaxed">
+                    Senin - Sabtu: 09:00 - 21:00 WIB<br>
+                    Minggu & Hari Libur: 11:00 - 18:00 WIB
+                </p>
+            </div>
+            <div class="space-y-4">
+                <h4 class="font-serif text-xs text-white tracking-[0.2em] uppercase font-bold">ALAMAT SHOWROOM</h4>
+                <p class="text-xs font-light leading-relaxed">
+                    Showroom Boutique:<br>
+                    Jl. Kemang Raya No. 42A, Mampang Prapatan, Jakarta Selatan, 12730
+                </p>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto border-t border-stone-800 mt-12 pt-8 text-center text-xs text-stone-500 font-semibold tracking-wider">
+            &copy; 2026 RUMAH AROMA (rumaharoma.co.id). Seluruh Hak Cipta Dilindungi.
+        </div>
+    </footer>
+
+    <!-- Application Logic & Engine Script -->
+    <script>
+        // Inspired Perfumes Database (Top Designer Brands Dupe)
+        const inspiredPerfumes = [
+            { id: "black_opium", name: "Noir Opium", inspiredBy: "YSL Black Opium", vibe: "Sweet Gourmand", mainNotes: "Kopi, Vanilla, Jasmin, Patchouli", color: "#4A2B42", desc: "Aroma sensual manis kopi hangat dipadu vanilla lembut dan keindahan melati putih." },
+            { id: "sauvage", name: "Sauvage Essence", inspiredBy: "Dior Sauvage", vibe: "Fresh & Spicy Wood", mainNotes: "Bergamot, Sichuan Pepper, Ambroxan", color: "#1F2E43", desc: "Aroma maskulin yang segar, tangguh, misterius, berjiwa petualang, berkat sentuhan bergamot." },
+            { id: "baccarat_540", name: "Rouge Royale 540", inspiredBy: "Baccarat Rouge 540", vibe: "Warm & Woody Amber", mainNotes: "Saffron, Jasmine, Amberwood, Cedarwood", color: "#7B1A1A", desc: "Aroma kayu amber oriental yang sangat mewah, elegan, manis, kaya karisma." },
+            { id: "english_pear", name: "Pear & Freesia Touch", inspiredBy: "Jo Malone English Pear", vibe: "Fresh Fruity Floral", mainNotes: "Pear, Freesia, Rose, Patchouli", color: "#C6BA9D", desc: "Aroma segar buah pir segar berpadu dengan bunga freesia putih yang lembut nan menawan." },
+            { id: "bleu_chanel", name: "Bleu Absolute", inspiredBy: "Chanel Bleu de Chanel", vibe: "Fresh Woody Citrus", mainNotes: "Grapefruit, Mint, Incense, Sandalwood", color: "#162535", desc: "Representasi aroma maskulin elegan, segar, modern, percaya diri tinggi." },
+            { id: "coco_mad", name: "Coco Mademoiselle", inspiredBy: "Chanel Coco Mademoiselle", vibe: "Luxury Floral Amber", mainNotes: "Orange, Rose, Patchouli, Vetiver", color: "#7F4E52", desc: "Aroma feminin mewah klasik, anggun, dengan paduan mawar serta jeruk mandarin." },
+            { id: "lost_cherry", name: "Lost Cherry Gold", inspiredBy: "Tom Ford Lost Cherry", vibe: "Sweet Cherry Gourmand", mainNotes: "Black Cherry, Bitter Almond, Liqueur, Tonka", color: "#6A102A", desc: "Aroma manis ceri hitam berpadu almond pahit yang penuh eksotisme menggoda." },
+            { id: "eros", name: "Eros Vibe", inspiredBy: "Versace Eros", vibe: "Sweet Minty Fresh", mainNotes: "Mint, Green Apple, Tonka Bean, Vanilla", color: "#1C5858", desc: "Aroma segar maskulin energik dari daun mint, apel hijau, dan vanilla madagaskar." },
+            { id: "libre", name: "Libre Freedom", inspiredBy: "YSL Libre", vibe: "Luxury Floral Lavender", mainNotes: "Lavender, Mandarin Orange, Jasmine, Vanilla", color: "#A87C39", desc: "Kebebasan feminin yang berani dari paduan lavender segar dan vanilla sensasional." }
+        ];
+
+        // Conditional Bottle Database (By Volume Category)
+        const bottleDatabase = {
+            "Discovery": [
+                { id: "disc_vial", name: "Standard Glass Vial Spray", premium: 0, capColor: "#2D2D2A", strokeColor: "#5B5B5A" },
+                { id: "disc_pen", name: "Pocket Slim Aluminum Pen", premium: 10000, capColor: "#A88F78", strokeColor: "#5B5B5A" },
+                { id: "disc_gold_roller", name: "Luxury Gold Matte Rollerball", premium: 15000, capColor: "#C5A880", strokeColor: "#8E724A" }
+            ],
+            "Beginner": [
+                { id: "begin_classic_clear", name: "French Square Glass Clear", premium: 0, capColor: "#1C1B19", strokeColor: "#A88F78" },
+                { id: "begin_amber_vintage", name: "Vintage Amber Apothecary Bottle", premium: 12000, capColor: "#5C4033", strokeColor: "#8C6239" },
+                { id: "begin_frosted", name: "Frosted Minimalist Cylinder", premium: 15000, capColor: "#B5B2AF", strokeColor: "#8E8A85" }
+            ],
+            "Expert": [
+                { id: "expert_royal_crystal", name: "Royal Octagon Faceted Crystal", premium: 45000, capColor: "#C5A880", strokeColor: "#A68658" },
+                { id: "expert_imperial_gold", name: "Imperial Gold Plated Heavy Glass", premium: 50000, capColor: "#D4AF37", strokeColor: "#AA7C11" },
+                { id: "expert_tall_column", name: "Tall Heavy-Base Nordic Column", premium: 30000, capColor: "#0F382E", strokeColor: "#081F1A" }
+            ]
+        };
+
+        // Application State Management
+        const appState = {
+            currentStep: 1,
+            selectedAroma: inspiredPerfumes[0], // default is Black Opium
+            concentration: { name: "EDP 15%", multiplier: 1.0 },
+            volume: { size: "50ml", category: "Expert", baseCost: 245000 },
+            bottle: { id: "expert_royal_crystal", name: "Royal Octagon Faceted Crystal", premium: 45000, capColor: "#C5A880", strokeColor: "#A68658" },
+            
+            customer: { fullname: "", whatsapp: "", address: "" },
+            paymentMethod: "QRIS",
+            perfumePrice: 0,
+            finalCheckoutPrice: 0,
+            
+            // Quiz choices state
+            quizAnswers: {
+                activity: "",
+                vibe: "",
+                durability: "",
+                budget: ""
+            }
+        };
+
+        // On DOM Content Load Initialization
+        window.addEventListener('DOMContentLoaded', () => {
+            // Setup Catalog step 1
+            renderAromaCatalog();
+            // Perform standard calculation on start
+            calculatePrices();
+            // Sync step layout rendering
+            renderStep();
+        });
+
+        // Toggle FAQ Accordion helper
+        function toggleFAQ(id) {
+            const answer = document.getElementById(`faq-answer-${id}`);
+            const icon = document.getElementById(`faq-icon-${id}`);
+            if (answer.classList.contains('hidden')) {
+                answer.classList.remove('hidden');
+                icon.classList.add('rotate-180');
+            } else {
+                answer.classList.add('hidden');
+                icon.classList.remove('rotate-180');
+            }
+        }
+
+        async function generateScentHappiness(customerName, aromaState) {
+            const systemPrompt = "Anda adalah Scent Sommelier & Kurator Filosofi Jiwa dari RUMAH AROMA. Tugas Anda adalah memberikan ucapan selamat yang sangat hangat, tulus, dan berkelas atas pilihan parfum kustom pelanggan, lalu menjabarkan filosofi puitis yang mendalam mengenai aroma tersebut berdasarkan notes dan vibe-nya. Akhiri dengan pesan afirmasi kuat yang membangkitkan rasa percaya diri, kebanggaan, dan keanggunan sejati dalam diri pelanggan saat mereka memakai mahakarya aroma ini di kehidupan nyata. Gunakan bahasa Indonesia yang sangat elegan, mewah, menyentuh hati, dan memberdayakan jiwa (maksimal 4 kalimat).";
+            
+            const userQuery = `Pelanggan bernama ${customerName} baru saja sukses meracik parfum kustom:
+            - Nama Aroma: "${aromaState.selectedAroma.name}" (Inspirasi: ${aromaState.selectedAroma.inspiredBy})
+            - Karakter Vibe: ${aromaState.selectedAroma.vibe}
+            - Catatan Aroma: ${aromaState.selectedAroma.mainNotes}
+            - Konsentrasi: ${aromaState.concentration.name}
+            - Volume: ${aromaState.volume.size}
+            - Bentuk Botol: ${aromaState.bottle.name}
+            
+            Berikan ucapan selamat yang hangat, filosofi aroma puitis, dan pesan penguat rasa percaya diri yang tinggi agar mereka bangga memakainya.`;
+
+            const apiKey = "";
+            const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent?key=${apiKey}`;
+
+            const payload = {
+                contents: [{ parts: [{ text: userQuery }] }],
+                systemInstruction: {
+                    parts: [{ text: systemPrompt }]
+                }
+            };
+
+            let retries = 3;
+            let delay = 1000;
+
+            while (retries > 0) {
+                try {
+                    const response = await fetch(apiUrl, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(payload)
+                    });
+                    
+                    if (!response.ok) {
+                        throw new Error(`API error Status: ${response.status}`);
+                    }
+                    
+                    const result = await response.json();
+                    const text = result?.candidates?.[0]?.content?.parts?.[0]?.text;
+                    if (text) return text.trim();
+                } catch (error) {
+                    retries--;
+                    if (retries === 0) {
+                        console.warn("Gemini API failed. Using fallback text.", error);
+                    } else {
+                        await new Promise(resolve => setTimeout(resolve, delay));
+                        delay *= 2;
+                    }
+                }
+            }
+
+            return `Selamat, ${customerName}! Pilihan Anda atas "${aromaState.selectedAroma.name}" adalah sebuah perayaan keberanian diri. Karakter ${aromaState.selectedAroma.vibe} dengan esensi ${aromaState.selectedAroma.mainNotes} melambangkan kekuatan tersembunyi yang anggun, membisikkan keyakinan mutlak pada setiap langkah Anda. Melangkahlah dengan kepala tegak, sebab aroma kustom ini adalah mahkota tak kasat mata yang menegaskan bahwa Anda berharga, berdaya, dan tak tertandingi.`;
+        }
+
+        // Search Engine Dupe (Pintu 2 Live Autocomplete)
+        function handleLiveSearch() {
+            const input = document.getElementById('live-search-input').value.toLowerCase().trim();
+            const dropdown = document.getElementById('autocomplete-results');
+            dropdown.innerHTML = "";
+
+            if (input.length === 0) {
+                dropdown.classList.add('hidden');
+                return;
+            }
+
+            // Filter inspired perfumes
+            const matches = inspiredPerfumes.filter(item => 
+                item.name.toLowerCase().includes(input) || 
+                item.inspiredBy.toLowerCase().includes(input) || 
+                item.vibe.toLowerCase().includes(input)
+            );
+
+            if (matches.length === 0) {
+                dropdown.innerHTML = `<div class="p-4 text-xs text-stone-500 italic">Aroma tidak ditemukan. Coba ketik kata kunci lain...</div>`;
+            } else {
+                matches.forEach(perfume => {
+                    const row = document.createElement('div');
+                    row.className = "flex justify-between items-center p-4 hover:bg-stone-50 cursor-pointer border-b border-stone-100 last:border-0";
+                    row.onclick = () => selectInspiredFromSearch(perfume);
+                    row.innerHTML = `
+                        <div>
+                            <span class="font-serif text-sm font-bold text-stone-900 block">${perfume.name}</span>
+                            <span class="text-[10px] text-stone-400 font-semibold uppercase">Inspired by ${perfume.inspiredBy}</span>
+                        </div>
+                        <span class="text-[10px] bg-atelier-emerald/10 text-atelier-emerald px-2 py-0.5 rounded-full font-bold uppercase">${perfume.vibe}</span>
+                    `;
+                    dropdown.appendChild(row);
+                });
+            }
+
+            dropdown.classList.remove('hidden');
+        }
+
+        // Apply Selection From Search
+        function selectInspiredFromSearch(perfume) {
+            document.getElementById('live-search-input').value = perfume.inspiredBy;
+            document.getElementById('autocomplete-results').classList.add('hidden');
+            
+            // Set state selected aroma
+            appState.selectedAroma = perfume;
+            
+            // Render update
+            renderAromaSelectedUI();
+            calculatePrices();
+
+            // Notify user and scroll down to the builder Step 2
+            showBannerNotification(`Berhasil memilih aroma: "${perfume.name}" (Inspired by ${perfume.inspiredBy}). Lanjut kustomisasi kepekatan!`);
+            document.getElementById('customizer-section').scrollIntoView({ behavior: 'smooth' });
+            goToStep(2);
+        }
+
+        // Smart Assistant Portal Control (Pintu 1)
+        function openSmartAssistant() {
+            document.getElementById('quiz-modal').classList.remove('hidden');
+            resetQuiz();
+        }
+
+        function closeSmartAssistant() {
+            document.getElementById('quiz-modal').classList.add('hidden');
+        }
+
+        // Reset Quiz State
+        function resetQuiz() {
+            appState.quizAnswers = { activity: "", vibe: "", durability: "", budget: "" };
+            
+            // Show first step screen
+            document.querySelectorAll('.quiz-screen').forEach(scr => scr.classList.add('hidden'));
+            document.getElementById('quiz-screen-1').classList.remove('hidden');
+            
+            // Reset indicators
+            document.getElementById('quiz-step-indicator').innerText = "Pertanyaan 1 dari 4";
+            document.getElementById('quiz-dots').innerHTML = `
+                <div class="w-6 h-1.5 rounded-full bg-atelier-emerald"></div>
+                <div class="w-2.5 h-1.5 rounded-full bg-stone-300"></div>
+                <div class="w-2.5 h-1.5 rounded-full bg-stone-300"></div>
+                <div class="w-2.5 h-1.5 rounded-full bg-stone-300"></div>
+            `;
+        }
+
+        // Selection Process inside Quiz options
+        function selectQuizOption(questionStep, answerValue) {
+            if (questionStep === 1) {
+                appState.quizAnswers.activity = answerValue;
+                // Move to step 2
+                document.getElementById('quiz-screen-1').classList.add('hidden');
+                document.getElementById('quiz-screen-2').classList.remove('hidden');
+                document.getElementById('quiz-step-indicator').innerText = "Pertanyaan 2 dari 4";
+                document.getElementById('quiz-dots').innerHTML = `
+                    <div class="w-2.5 h-1.5 rounded-full bg-stone-300"></div>
+                    <div class="w-6 h-1.5 rounded-full bg-atelier-emerald"></div>
+                    <div class="w-2.5 h-1.5 rounded-full bg-stone-300"></div>
+                    <div class="w-2.5 h-1.5 rounded-full bg-stone-300"></div>
+                `;
+            } else if (questionStep === 2) {
+                appState.quizAnswers.vibe = answerValue;
+                // Move to step 3
+                document.getElementById('quiz-screen-2').classList.add('hidden');
+                document.getElementById('quiz-screen-3').classList.remove('hidden');
+                document.getElementById('quiz-step-indicator').innerText = "Pertanyaan 3 dari 4";
+                document.getElementById('quiz-dots').innerHTML = `
+                    <div class="w-2.5 h-1.5 rounded-full bg-stone-300"></div>
+                    <div class="w-2.5 h-1.5 rounded-full bg-stone-300"></div>
+                    <div class="w-6 h-1.5 rounded-full bg-atelier-emerald"></div>
+                    <div class="w-2.5 h-1.5 rounded-full bg-stone-300"></div>
+                `;
+            } else if (questionStep === 3) {
+                appState.quizAnswers.durability = answerValue;
+                // Move to step 4
+                document.getElementById('quiz-screen-3').classList.add('hidden');
+                document.getElementById('quiz-screen-4').classList.remove('hidden');
+                document.getElementById('quiz-step-indicator').innerText = "Pertanyaan 4 dari 4";
+                document.getElementById('quiz-dots').innerHTML = `
+                    <div class="w-2.5 h-1.5 rounded-full bg-stone-300"></div>
+                    <div class="w-2.5 h-1.5 rounded-full bg-stone-300"></div>
+                    <div class="w-2.5 h-1.5 rounded-full bg-stone-300"></div>
+                    <div class="w-6 h-1.5 rounded-full bg-atelier-emerald"></div>
+                `;
+            } else if (questionStep === 4) {
+                appState.quizAnswers.budget = answerValue;
+                // Run algorithm recommendation match
+                processQuizRecommendation();
+            }
+        }
+
+        // Algoritma Pencari Aroma Rekomendasi Terdekat
+        function processQuizRecommendation() {
+            let recommendation = inspiredPerfumes[0]; // default fallback (Black Opium)
+            const vibeChoice = appState.quizAnswers.vibe;
+
+            if (vibeChoice === "sweet") {
+                recommendation = inspiredPerfumes.find(p => p.id === "black_opium") || inspiredPerfumes.find(p => p.id === "lost_cherry");
+            } else if (vibeChoice === "fresh") {
+                recommendation = inspiredPerfumes.find(p => p.id === "sauvage") || inspiredPerfumes.find(p => p.id === "english_pear") || inspiredPerfumes.find(p => p.id === "eros");
+            } else if (vibeChoice === "floral") {
+                recommendation = inspiredPerfumes.find(p => p.id === "coco_mad") || inspiredPerfumes.find(p => p.id === "libre") || inspiredPerfumes.find(p => p.id === "english_pear");
+            } else if (vibeChoice === "woody") {
+                recommendation = inspiredPerfumes.find(p => p.id === "baccarat_540") || inspiredPerfumes.find(p => p.id === "bleu_chanel") || inspiredPerfumes.find(p => p.id === "sauvage");
+            }
+
+            // Save match temporarily in state
+            appState.quizRecommendationMatch = recommendation;
+
+            // Update Recommendation DOM text
+            document.getElementById('rec-aroma-title').innerText = recommendation.name;
+            document.getElementById('rec-aroma-sub').innerText = `INSPIRED BY ${recommendation.inspiredBy}`;
+            document.getElementById('rec-aroma-desc').innerText = recommendation.desc;
+
+            // Display Screen result
+            document.getElementById('quiz-screen-4').classList.add('hidden');
+            document.getElementById('quiz-screen-result').classList.remove('hidden');
+            document.getElementById('quiz-step-indicator').innerText = "Rekomendasi Mutlak Ditemukan!";
+        }
+
+        // Apply recommendation to main Customizer state
+        function applyQuizRecommendation() {
+            const match = appState.quizRecommendationMatch;
+            if (match) {
+                appState.selectedAroma = match;
+                
+                // Set default concentration, volume, and bottle based on budget and durability answers
+                const bgt = appState.quizAnswers.budget;
+                const dur = appState.quizAnswers.durability;
+
+                // Adjust default concentration
+                if (dur === "4-6") {
+                    selectConcentration('EDP 15%', 1.0);
+                } else if (dur === "8-12") {
+                    selectConcentration('EDP 20%', 1.15);
+                } else if (dur === "24") {
+                    selectConcentration('Extrait 30%', 1.35);
+                }
+
+                // Adjust default volume size based on budget
+                if (bgt === "low") {
+                    selectVolume('10ml', 'Discovery', 75000);
+                } else if (bgt === "mid") {
+                    selectVolume('30ml', 'Beginner', 175000);
+                } else if (bgt === "high") {
+                    selectVolume('50ml', 'Expert', 245000);
+                }
+
+                // Sync UI & Calculations
+                renderAromaSelectedUI();
+                calculatePrices();
+
+                closeSmartAssistant();
+                showBannerNotification(`Aroma Rekomendasi "${match.name}" telah dikunci di dalam Studio Custom. Silakan lanjutkan langkah pendaftaran!`);
+                document.getElementById('customizer-section').scrollIntoView({ behavior: 'smooth' });
+                goToStep(2);
+            }
+        }
+
+        // Stepper Navigation Control Methods
+        function goToStep(step) {
+            if (step < appState.currentStep) {
+                appState.currentStep = step;
+                renderStep();
+            } else {
+                if (validateStep(appState.currentStep)) {
+                    appState.currentStep = step;
+                    renderStep();
+                }
+            }
+        }
+
+        function nextStep() {
+            if (validateStep(appState.currentStep)) {
+                if (appState.currentStep < 5) {
+                    appState.currentStep++;
+                    renderStep();
+                }
+            }
+        }
+
+        function prevStep() {
+            if (appState.currentStep > 1) {
+                appState.currentStep--;
+                renderStep();
+            }
+        }
+
+        // Validation by Step before moving forward
+        function validateStep(step) {
+            if (step === 1) {
+                if (!appState.selectedAroma) {
+                    showBannerNotification('Silakan pilih salah satu aroma inspirasi di Langkah 1.', 'error');
+                    return false;
+                }
+            }
+            if (step === 5) {
+                const name = document.getElementById('cust-fullname').value.trim();
+                const wa = document.getElementById('cust-whatsapp').value.trim();
+                const address = document.getElementById('cust-address').value.trim();
+
+                if (!name || !wa || !address) {
+                    showBannerNotification('Harap isi semua kolom formulir data penerimaan wajib.', 'error');
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        // RENDER STEP VISUAL LAYOUT
+        function renderStep() {
+            // Hide all sub content blocks
+            document.querySelectorAll('.step-panel-builder').forEach(panel => panel.classList.add('hidden'));
+            // Display active panel
+            document.getElementById(`step-content-${appState.currentStep}`).classList.remove('hidden');
+
+            // Sync Stepper line percent size width
+            const linePercent = ((appState.currentStep - 1) / 4) * 100;
+            document.getElementById('step-progress-line').style.width = `${linePercent}%`;
+
+            // Style Step numbers indicator rings
+            document.querySelectorAll('.step-indicator').forEach(ind => {
+                const sNum = parseInt(ind.dataset.step);
+                const button = ind.querySelector('button');
+                const text = ind.querySelector('span');
+
+                if (sNum === appState.currentStep) {
+                    button.className = "w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center border-2 transition-all duration-300 bg-atelier-emerald text-white border-atelier-emerald font-bold shadow-md shadow-atelier-emerald/20";
+                    if (text) text.className = "text-[9px] md:text-[10px] font-bold tracking-widest uppercase mt-2 hidden sm:block text-atelier-emerald";
+                } else if (sNum < appState.currentStep) {
+                    button.className = "w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center border-2 transition-all duration-300 bg-atelier-taupe text-white border-atelier-taupe font-bold";
+                    if (text) text.className = "text-[9px] md:text-[10px] font-semibold tracking-widest uppercase mt-2 hidden sm:block text-stone-500";
+                } else {
+                    button.className = "w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center border-2 transition-all duration-300 bg-stone-100 text-stone-400 border-stone-200 font-bold";
+                    if (text) text.className = "text-[9px] md:text-[10px] font-semibold tracking-widest uppercase mt-2 hidden sm:block text-stone-400";
+                }
+            });
+
+            // Adjust navigation buttons display properties
+            const prevBtn = document.getElementById('prev-step-btn');
+            const nextBtn = document.getElementById('next-step-btn');
+            const submitBtn = document.getElementById('submit-order-btn');
+
+            if (appState.currentStep === 1) {
+                prevBtn.disabled = true;
+                prevBtn.classList.add('opacity-30');
+            } else {
+                prevBtn.disabled = false;
+                prevBtn.classList.remove('opacity-30');
+            }
+
+            if (appState.currentStep === 5) {
+                nextBtn.classList.add('hidden');
+                submitBtn.classList.remove('hidden');
+                
+                // Populate Invoice details on render Step 5
+                document.getElementById('invoice-scent-name').innerText = `"${appState.selectedAroma.name}"`;
+                document.getElementById('invoice-config').innerText = `${appState.concentration.name} - ${appState.volume.size}`;
+                document.getElementById('invoice-total').innerText = `Rp ${appState.finalCheckoutPrice.toLocaleString('id-ID')}`;
+            } else {
+                nextBtn.classList.remove('hidden');
+                submitBtn.classList.add('hidden');
+            }
+
+            if (appState.currentStep === 4) {
+                // Populate botol list depending on step selection
+                document.getElementById('cond-selected-volume-badge').textContent = `${appState.volume.size} (${appState.volume.category} Size)`;
+                renderConditionalBottles();
+            }
+        }
+
+        // Render step 1 scent list
+        function renderAromaCatalog() {
+            const grid = document.querySelector('#step-content-1 .grid');
+            grid.innerHTML = "";
+
+            inspiredPerfumes.forEach(perfume => {
+                const isActive = appState.selectedAroma.id === perfume.id;
+                const cardClass = isActive ? 'border-atelier-emerald bg-stone-50 ring-2 ring-atelier-emerald/10' : 'border-stone-200 bg-white';
+                
+                const card = `
+                    <div onclick="selectAromaFromCatalog('${perfume.id}')" class="scent-select-card p-4 border rounded-2xl cursor-pointer hover:border-atelier-emerald transition-all flex flex-col justify-between ${cardClass}" data-scent-id="${perfume.id}">
+                        <div class="space-y-1">
+                            <div class="flex justify-between items-start">
+                                <span class="font-serif text-base font-bold text-stone-900">${perfume.name}</span>
+                                <span class="text-[9px] bg-atelier-taupe/15 text-atelier-taupeDark font-bold px-2 py-0.5 rounded-full uppercase">${perfume.vibe}</span>
+                            </div>
+                            <span class="text-[10px] text-stone-400 font-semibold block uppercase">Inspired by ${perfume.inspiredBy}</span>
+                            <p class="text-stone-500 text-[11px] font-light leading-relaxed mt-2">${perfume.desc}</p>
+                        </div>
+                        <div class="mt-3 pt-2 border-t border-stone-100 flex justify-between items-center">
+                            <span class="text-[10px] text-stone-400 italic">Notes: ${perfume.mainNotes}</span>
+                            <span class="text-[10px] font-bold text-atelier-emerald"><i class="fa-solid fa-flask"></i> Pilih</span>
+                        </div>
+                    </div>
+                `;
+                grid.innerHTML += card;
+            });
+        }
+
+        // Action select aroma
+        function selectAromaFromCatalog(id) {
+            const perfume = inspiredPerfumes.find(p => p.id === id);
+            if (perfume) {
+                appState.selectedAroma = perfume;
+                
+                // Toggle active visuals on grid cards
+                document.querySelectorAll('.scent-select-card').forEach(card => {
+                    card.classList.remove('border-atelier-emerald', 'bg-stone-50', 'ring-2', 'ring-atelier-emerald/10');
+                    if (card.dataset.scentId === id) {
+                        card.classList.add('border-atelier-emerald', 'bg-stone-50', 'ring-2', 'ring-atelier-emerald/10');
+                    }
+                });
+
+                renderAromaSelectedUI();
+                calculatePrices();
+            }
+        }
+
+        // Update selected state visual items (SVG, labels, text)
+        function renderAromaSelectedUI() {
+            const aroma = appState.selectedAroma;
+
+            // Summary Left panel updates
+            document.getElementById('live-display-aroma-title').innerText = aroma.name;
+            document.getElementById('live-display-inspired-brand').innerText = `Inspired by ${aroma.inspiredBy}`;
+            document.getElementById('live-summary-scent').innerText = `${aroma.vibe} (${aroma.name})`;
+
+            // Hero bottle live update as nice detail
+            const heroDisp = document.getElementById('hero-display-name');
+            if (heroDisp) heroDisp.innerText = `"${aroma.name}"`;
+
+            // Live Update Bottle SVG Title
+            document.getElementById('dynamic-svg-title').textContent = aroma.name.toUpperCase().substring(0, 14);
+
+            // Change liquid fill color dynamically in SVG depending on aroma character
+            const liquid = document.getElementById('dynamic-svg-liquid');
+            if (liquid) {
+                liquid.setAttribute('fill', aroma.color);
+            }
+        }
+
+        // Step 2 Selection method
+        function selectConcentration(name, multiplier) {
+            appState.concentration.name = name;
+            appState.concentration.multiplier = multiplier;
+
+            // Visual Card toggle
+            document.querySelectorAll('.concentration-card').forEach(card => {
+                card.classList.remove('border-atelier-emerald', 'bg-stone-50/50');
+                const radio = card.querySelector('input[type="radio"]');
+                if (card.dataset.conc === name) {
+                    card.classList.add('border-atelier-emerald', 'bg-stone-50/50');
+                    if (radio) radio.checked = true;
+                }
+            });
+
+            // Update SVG Tag
+            document.getElementById('dynamic-svg-desc').textContent = name.toUpperCase();
+            document.getElementById('live-summary-concentration').innerText = name;
+
+            calculatePrices();
+        }
+
+        // Step 3 Selection volume method
+        function selectVolume(size, category, cost) {
+            appState.volume.size = size;
+            appState.volume.category = category;
+            appState.volume.baseCost = cost;
+
+            // Visual volume Card toggle
+            document.querySelectorAll('.volume-btn').forEach(btn => {
+                btn.classList.remove('border-atelier-emerald', 'bg-stone-50', 'ring-2', 'ring-atelier-emerald/10');
+                if (btn.dataset.vol === size) {
+                    btn.classList.add('border-atelier-emerald', 'bg-stone-50', 'ring-2', 'ring-atelier-emerald/10');
+                }
+            });
+
+            // SVG Liquid Level visual change dynamically depending on milliliters choice
+            const liquid = document.getElementById('dynamic-svg-liquid');
+            if (liquid) {
+                if (size === "5ml") {
+                    liquid.setAttribute('d', 'M10 115V135C10 140 14 144 19 144H81C85.9 144 90 140 90 135V115H10Z');
+                } else if (size === "10ml") {
+                    liquid.setAttribute('d', 'M9 105V135C9 140 13 144 18 144H82C86.9 144 91 140 91 135V105H9Z');
+                } else if (size === "15ml") {
+                    liquid.setAttribute('d', 'M8 95V135C8 140 12 144 17 144H83C87.9 144 92 140 92 135V95H8Z');
+                } else if (size === "30ml") {
+                    liquid.setAttribute('d', 'M7 85V135C7 140 11 144 16 144H84C88.9 144 93 140 93 135V85H7Z');
+                } else if (size === "50ml") {
+                    liquid.setAttribute('d', 'M6 75V135C6 140 10 144 15 144H85C89.9 144 94 140 94 135V75H6Z');
+                } else if (size === "100ml") {
+                    liquid.setAttribute('d', 'M6 55V135C6 140 10 144 15 144H85C89.9 144 94 140 94 135V55H6Z');
+                }
+            }
+
+            // Update SVG Tag label
+            document.getElementById('dynamic-svg-vol-tag').textContent = size;
+            document.getElementById('live-summary-volume').innerText = `${size} (${category})`;
+
+            // Set default bottle on volume change based on category
+            const defaults = bottleDatabase[category];
+            if (defaults && defaults.length > 0) {
+                selectBottle(defaults[0].id, defaults[0].name, defaults[0].premium, defaults[0].capColor, defaults[0].strokeColor);
+            }
+
+            calculatePrices();
+        }
+
+        // Render Conditional step 4 bottle choices dependent on chosen volume size category
+        function renderConditionalBottles() {
+            const grid = document.getElementById('dynamic-bottles-grid');
+            grid.innerHTML = "";
+
+            const activePresets = bottleDatabase[appState.volume.category];
+
+            activePresets.forEach(bottle => {
+                const isActive = appState.bottle.id === bottle.id;
+                const activeClass = isActive ? 'border-atelier-emerald bg-stone-50 ring-2 ring-atelier-emerald/10' : 'border-stone-200 bg-white';
+                
+                // Represent premium icon based on ID
+                let iconClass = 'fa-prescription-bottle';
+                if (bottle.id.includes('crystal') || bottle.id.includes('gold')) {
+                    iconClass = 'fa-gem';
+                }
+
+                const card = `
+                    <button onclick="selectBottle('${bottle.id}', '${bottle.name}', ${bottle.premium}, '${bottle.capColor}', '${bottle.strokeColor}')" 
+                        class="bottle-select-card p-5 border rounded-2xl flex flex-col items-center justify-between text-center transition hover:border-atelier-emerald ${activeClass}" 
+                        data-bottle-id="${bottle.id}">
+                        
+                        <div class="w-12 h-12 rounded-full bg-atelier-cream flex items-center justify-center text-stone-500 mb-3 text-lg border border-stone-100">
+                            <i class="fa-solid ${iconClass}"></i>
+                        </div>
+                        
+                        <div class="space-y-1">
+                            <span class="font-serif text-sm font-bold text-stone-900 block leading-snug">${bottle.name}</span>
+                            <span class="text-xs text-stone-400 font-semibold block">${bottle.premium === 0 ? 'Kemasan Standar (Gratis)' : `+ Rp ${bottle.premium.toLocaleString('id-ID')}`}</span>
+                        </div>
+                    </button>
+                `;
+                grid.innerHTML += card;
+            });
+        }
+
+        // Select Bottle Method
+        function selectBottle(id, name, premium, capColor, strokeColor) {
+            appState.bottle = { id, name, premium, capColor, strokeColor };
+
+            // Update active state visual cards on grid
+            document.querySelectorAll('.bottle-select-card').forEach(card => {
+                card.classList.remove('border-atelier-emerald', 'bg-stone-50', 'ring-2', 'ring-atelier-emerald/10');
+                if (card.dataset.bottleId === id) {
+                    card.classList.add('border-atelier-emerald', 'bg-stone-50', 'ring-2', 'ring-atelier-emerald/10');
+                }
+            });
+
+            // Adjust live preview bottle colors
+            const capSVG = document.getElementById('dynamic-svg-cap');
+            const glassSVG = document.getElementById('dynamic-svg-glass');
+            if (capSVG) capSVG.setAttribute('fill', capColor);
+            if (glassSVG) glassSVG.setAttribute('stroke', strokeColor);
+
+            // Update invoices labels
+            document.getElementById('live-summary-bottle').innerText = name;
+
+            calculatePrices();
+        }
+
+        // Payment methods select handler
+        function selectPaymentMethod(name) {
+            appState.paymentMethod = name;
+            document.querySelectorAll('input[name="pay-radio"]').forEach(radio => {
+                if (radio.value === name) {
+                    radio.checked = true;
+                }
+            });
+        }
+
+        // PRICE CALCULATION FORMULA ENGINE
+        function calculatePrices() {
+            const baseVolCost = appState.volume.baseCost;
+            const mult = appState.concentration.multiplier;
+            const bottlePrem = appState.bottle.premium;
+
+            // Calculate base customized perfume price
+            appState.perfumePrice = Math.round((baseVolCost * mult) + bottlePrem);
+            appState.finalCheckoutPrice = appState.perfumePrice;
+
+            // Sync final checkout pay
+            document.getElementById('live-summary-total-price').innerText = `Rp ${appState.finalCheckoutPrice.toLocaleString('id-ID')}`;
+        }
+
+        // Banner notifications helper
+        function showBannerNotification(message, type = 'info') {
+            const wrap = document.createElement('div');
+            wrap.className = `fixed top-6 right-6 z-50 transform transition-all duration-300 translate-y-2 opacity-0 max-w-sm w-full p-4 rounded-2xl shadow-xl flex items-start space-x-3 text-sm font-bold ${
+                type === 'error' ? 'bg-red-50 text-red-800 border border-red-200' : 'bg-atelier-charcoal text-white border border-stone-800'
+            }`;
+            
+            const icon = type === 'error' ? '<i class="fa-solid fa-triangle-exclamation text-red-600 mt-0.5"></i>' : '<i class="fa-solid fa-circle-check text-atelier-gold mt-0.5"></i>';
+            
+            wrap.innerHTML = `
+                ${icon}
+                <div class="flex-1">${message}</div>
+                <button onclick="this.parentElement.remove()" class="text-stone-400 hover:text-white">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            `;
+            
+            document.body.appendChild(wrap);
+            
+            // Animation triggers
+            setTimeout(() => { wrap.classList.remove('translate-y-2', 'opacity-0'); }, 40);
+            setTimeout(() => {
+                wrap.classList.add('translate-y-2', 'opacity-0');
+                setTimeout(() => { wrap.remove(); }, 300);
+            }, 5000);
+        }
+
+        async function submitCustomOrder() {
+            const fullname = document.getElementById('cust-fullname').value.trim();
+            const whatsapp = document.getElementById('cust-whatsapp').value.trim();
+            const address = document.getElementById('cust-address').value.trim();
+
+            if (!fullname || !whatsapp || !address) {
+                showBannerNotification('Semua isian formulir langkah pengiriman wajib diisi.', 'error');
+                return;
+            }
+
+            // Sync state
+            appState.customer.fullname = fullname;
+            appState.customer.whatsapp = `+62 ${whatsapp}`;
+            appState.customer.address = address;
+
+            // Trigger submit button loading state
+            const submitBtn = document.getElementById('submit-order-btn');
+            const originalText = submitBtn.innerHTML;
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<i class="fa-solid fa-scroll animate-pulse mr-2"></i> Merajut Filosofi Aroma Anda...';
+
+            // Generate Random Transaction ID Receipt Number
+            const receiptId = `RA-${Math.floor(100000 + Math.random() * 900000)}`;
+
+            // Call Scent Sommelier AI to conclude happiness
+            const aiHappiness = await generateScentHappiness(fullname, appState);
+
+            // Update success modal with AI message
+            document.getElementById('rec-ai-happiness').innerText = `"${aiHappiness}"`;
+
+            // Build beautifully HTML-formatted Telegram Message including AI Happiness Insight
+            const tgMessage = `
+<b>⚜️ PESANAN CUSTOM BARU - RUMAH AROMA ⚜️</b>
+━━━━━━━━━━━━━━━━━━━━━
+<b>ID Transaksi:</b> <code>${receiptId}</code>
+
+<b>👑 SPESIFIKASI RACIKAN PARFUM:</b>
+• <b>Nama Parfum:</b> "<i>${appState.selectedAroma.name}</i>"
+• <b>Aroma Inspirasi:</b> ${appState.selectedAroma.inspiredBy}
+• <b>Karakter Vibe:</b> ${appState.selectedAroma.vibe}
+• <b>Kepekatan / Konsentrasi:</b> ${appState.concentration.name}
+• <b>Ukuran Volume:</b> ${appState.volume.size} (${appState.volume.category} Size)
+• <b>Desain Botol:</b> ${appState.bottle.name}
+
+<b>📦 DATA ALAMAT PENGIRIMAN:</b>
+• <b>Nama Lengkap Penerima:</b> ${appState.customer.fullname}
+• <b>Nomor HP / WhatsApp:</b> https://wa.me/62${whatsapp}
+• <b>Alamat Lengkap Tujuan:</b>
+<i>${appState.customer.address}</i>
+
+<b>💳 SUMMARY PEMBAYARAN:</b>
+• <b>Metode Transaksi:</b> ${appState.paymentMethod}
+• <b>Total Bayar Tagihan Kasir:</b> <b>Rp ${appState.finalCheckoutPrice.toLocaleString('id-ID')}</b>
+
+<b>✨ UCAPAN SELAMAT & FILOSOFI AROMA (AI SOMMELIER):</b>
+<i>"${aiHappiness}"</i>
+━━━━━━━━━━━━━━━━━━━━━
+<i>Mohon Admin Butik segera menghubungi customer via WhatsApp untuk melampirkan QRIS/Nomor Rekening!</i>
+`;
+
+            // Telegram API Parameters
+            const botToken = "8854325722:AAHdsd2vx4Z92HkQUjap7LUzqf0s1TeSAG0";
+            const groupId = "-1003926654448";
+            const apiEndpoint = `https://api.telegram.org/bot${botToken}/sendMessage`;
+
+            try {
+                // Post to Telegram Group Group API
+                const response = await fetch(apiEndpoint, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        chat_id: groupId,
+                        text: tgMessage,
+                        parse_mode: 'HTML'
+                    })
+                });
+
+                if (response.ok) {
+                    // Populate Invoice Success modal receipt values
+                    document.getElementById('rec-id').innerText = receiptId;
+                    document.getElementById('rec-perfume-name').innerText = `"${appState.selectedAroma.name}"`;
+                    document.getElementById('rec-inspired').innerText = appState.selectedAroma.inspiredBy;
+                    document.getElementById('rec-concentration').innerText = appState.concentration.name;
+                    document.getElementById('rec-volume').innerText = appState.volume.size;
+                    document.getElementById('rec-bottle').innerText = appState.bottle.name;
+                    document.getElementById('rec-total').innerText = `Rp ${appState.finalCheckoutPrice.toLocaleString('id-ID')}`;
+                    document.getElementById('rec-payment-method').innerText = appState.paymentMethod;
+
+                    // Set WA Confirm direct click button link URL
+                    const waFormatText = encodeURIComponent(
+                        `Halo Admin Rumah Aroma, saya ingin konfirmasi pesanan kustom parfum saya.\n\n` +
+                        `*ID Transaksi:* ${receiptId}\n` +
+                        `*Nama Kustom:* "${appState.selectedAroma.name}" (Inspired ${appState.selectedAroma.inspiredBy})\n` +
+                        `*Ukuran/Konsentrasi:* ${appState.volume.size} - ${appState.concentration.name}\n` +
+                        `*Bentuk Botol:* ${appState.bottle.name}\n` +
+                        `*Metode Pembayaran:* ${appState.paymentMethod}\n` +
+                        `*Total Pembayaran Tagihan:* Rp ${appState.finalCheckoutPrice.toLocaleString('id-ID')}\n\n` +
+                        `*Filosofi & Keyakinan Aroma:* "${aiHappiness}"\n\n` +
+                        `Mohon info pengiriman instan QRIS / nomor rekening pembayarannya ya min. Terima kasih!`
+                    );
+                    document.getElementById('wa-cs-confirm-btn').setAttribute('href', `https://wa.me/6281234567890?text=${waFormatText}`);
+
+                    // Show success visual modal
+                    document.getElementById('success-modal').classList.remove('hidden');
+                } else {
+                    showBannerNotification('Gagal mengirim detail pesanan ke server. Hubungi admin via WhatsApp untuk pesanan manual.', 'error');
+                }
+            } catch (err) {
+                console.error("Connection error to Telegram:", err);
+                showBannerNotification('Terjadi kegagalan koneksi jaringan internet. Harap periksa koneksi Anda.', 'error');
+            } finally {
+                // Return button normal state
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = originalText;
+            }
+        }
+
+        // Close Success Receipt Modal
+        function closeSuccessModal() {
+            document.getElementById('success-modal').classList.add('hidden');
+            // Back to step 1 to build another scent
+            goToStep(1);
+        }
+    </script>
+</body>
+</html>
